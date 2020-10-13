@@ -1,0 +1,21 @@
+/* .container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    position: fixed;
+    background-color: seagreen; */
+
+
+.logosFooter{
+    display: flex;
+}
+
+img{
+    height: 20px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
