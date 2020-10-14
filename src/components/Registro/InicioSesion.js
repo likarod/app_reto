@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-const Login = () => {
+export class InicioSesion extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      parametro:this.props.match.params
+    }
+  }
+
+
+  render() {
     return (
-      <section className="login">
-        <div>
-            <p>Productor</p>
-        </div>
-      </section>
+      <div>
+        <h4>{this.state.parametro.value}</h4>
+      </div>
     )
-} 
-  
-export default Login
+  }
+}
+
+export default InicioSesion

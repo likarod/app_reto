@@ -4,8 +4,10 @@ import {Dropdown} from 'react-bootstrap';
 
 import Menu from '../Menu/Menu'
 import Usuario from '../Usuario/Usuario'
+import InfoCarrito from '../InfoCarrito/InfoCarrito';
 
 import './Nav.css';
+
 
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
@@ -16,10 +18,12 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 
 
 class Nav extends Component {
-  // constructor(props){
-    // super(props);
-    // this.state = {};
-  // }
+  constructor(props){
+    super(props);
+    this.state = {
+      cantidad: 0,
+    };
+  }
 
   render() {
     return (
@@ -36,7 +40,10 @@ class Nav extends Component {
                   <li>
                     <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
                       <box-icon name='cart-alt' size="sm"></box-icon>
-                      <Link to="/pedidos" className="link">Cesta</Link>
+                      <Link to="/pedidos" className="link">
+                        Cesta
+                        {/* <span id="Item_cantidad"><InfoCarrito/></span> */}
+                      </Link>
                     </Dropdown.Toggle>
                   </li>
                 </Dropdown>

@@ -11,8 +11,8 @@ class Registro extends Component {
   constructor(props){
     super(props);
     this.state = {
-      // email: "",
-      // password:"",
+      param1: "Consumidor",
+      param2: "Productor"
     };
   }
   
@@ -22,9 +22,9 @@ class Registro extends Component {
     return (
       <div>
         <div className="Registro">
-          <p>Crear cuenta</p>
-            <Link to="/inicio/productor">¿Vendes?</Link>
-            <Link to="/inicio/consumidor">¿Compras?</Link>
+          <h2>Crear cuenta</h2>
+            <Link to={"/iniciosesion/" + this.state.param2}>¿Vendes?</Link>
+            <Link to={"/iniciosesion/" + this.state.param1}>¿Compras?</Link>
         </div>
       </div>
     );

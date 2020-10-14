@@ -16,7 +16,6 @@ export default class Contenido extends Component {
 
     componentDidMount(){
         // fetch('/getProductos')
-        console.log(this.state.param.producto)
         this.setState({productos:Items})
     }
     
@@ -33,7 +32,7 @@ export default class Contenido extends Component {
         return (
             <section>
                 <div className="seccion">
-                    <h1>Producto: {this.state.param.producto}</h1>
+                    <h1>{this.state.param.producto}</h1>
                    {this.state.productos.map(articulos => <Articulos datos={articulos} />)} 
                 </div>
                 {/*  Esta será la función que me creará nuevos artículos. Esta viene directamente del componentes Artículos {this.addItems()}*/}

@@ -33,7 +33,7 @@ class Buscador extends Component {
               <div className="buscador_principal">
                 <label for="busquedaArticulos" className="etq_busca_articulo">
                   <div className="caja_buscador">
-                    <Link to={"/productos/" + this.state.input}>
+                    <Link to={"/articulos/" + this.state.input}>
                       <box-icon name='search' size="xs"></box-icon>
                     </Link>
                     <div>
