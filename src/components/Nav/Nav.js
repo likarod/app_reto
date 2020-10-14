@@ -1,5 +1,5 @@
-import React, { Component, useState, useEffect } from 'react';
-import {Link, withRouter} from 'react-router-dom';
+import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import {Dropdown} from 'react-bootstrap';
 
 import Menu from '../Menu/Menu'
@@ -23,25 +23,25 @@ class Nav extends Component {
 
   render() {
     return (
-      <div class="App-header">
-        <div class="header_menu_drch">
-          <ul class="Lista_nav">
+      <div className="App-header">
+        <div className="header_menu_drch">
+          <ul className="Lista_nav">
             <li><Menu/></li>
           </ul>
         </div>
-        <div class="header_menu_izq">
-          <ul class="Lista_nav">
-            <div class="div_items">
+        <div className="header_menu_izq">
+          <ul className="Lista_nav">
+            <div className="div_items">
                 <Dropdown>
                   <li>
-                  <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                  <box-icon name='cart-alt' size="sm"></box-icon>
-                  <Link to="/pedidos" class="link">Cesta</Link>
-                  </Dropdown.Toggle>
+                    <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+                      <box-icon name='cart-alt' size="sm"></box-icon>
+                      <Link to="/pedidos" className="link">Cesta</Link>
+                    </Dropdown.Toggle>
                   </li>
                 </Dropdown>
             </div>
-            <div class="div_items">
+            <div className="div_items">
               <li><Usuario/></li>
             </div>
           </ul>

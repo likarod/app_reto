@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+
 import './Articulos.css'
 
 export class Articulos extends Component {
@@ -30,7 +32,11 @@ export class Articulos extends Component {
                             <p className="desc">{this.state.descripcion}</p>
                         </div>
                         <div className="btnProductos">
-                            <button class="agregar"> Añadir al carrito</button>
+                            <Link to="/pedidos">
+                              <button class="agregar"> 
+                              Añadir al carrito
+                              </button>  
+                            </Link>
                             <button className="cantidad">
                                 Cantidad 
                             </button>  

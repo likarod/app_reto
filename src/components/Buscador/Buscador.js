@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+
 import './Buscador.css';
 
 class Buscador extends Component {
   constructor(props){
     super(props);
     this.state = {
-      buscador:"",
       errormessange: "",
+      input: "",
     };
   }
 
+  cambiarEstado = (e) => {
+    this.setState({input: e.target.value})
+  }
+ 
   // componentWillMount(){}
   // componentDidMount(){}
   // componentWillUnmount(){}
@@ -22,19 +28,16 @@ class Buscador extends Component {
   render() {
     return (
       <article>
-          <div class="divFormBusca">
-            <form class="formulario_busqueda">
-              <div class="buscador_principal">
-                <label for="busquedaArticulos" class="etq_busca_articulo">
-                  <div class="caja_buscador">
-                    <button aria-label="Buscar" type="submit" class="boton_buscador">
-                    <box-icon name='search' size="xs"></box-icon>
-                    </button>
+          <div className="divFormBusca">
+            <form className="formulario_busqueda">
+              <div className="buscador_principal">
+                <label for="busquedaArticulos" className="etq_busca_articulo">
+                  <div className="caja_buscador">
+                    <Link to={"/productos/" + this.state.input}>
+                      <box-icon name='search' size="xs"></box-icon>
+                    </Link>
                     <div>
-                    <input class="input_buscador" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocorrect="off" spellcheck="false" id="bigsearch" value="" name="buscador" placeholder="¿Qué deseas comprar?" required=""></input>
-                    {/* <picture>
-                      <img src="/media/pngegg.png" alt="fondo" className="fondoBuscador"/>
-                    </picture> */}
+                    <input className="input_buscador" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocorrect="off" spellcheck="false" id="bigsearch" name="buscador" placeholder="¿Qué deseas comprar?" required="" onChange={this.cambiarEstado} ></input>
                     </div>
                   </div>
                 </label>

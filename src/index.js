@@ -1,21 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+
 import './index.css';
 import App from '../src/components/App/App';
 import * as serviceWorker from './serviceWorker';
 
-// import { AuthProvider} from '../src/components/context/authContext'
-import {BrowserRouter} from 'react-router-dom'
-
 ReactDOM.render(
   
-  <React.StrictMode>
-    <BrowserRouter>  
+  <React.StrictMode> 
       {/* <AuthProvider> */}
         <App />
-      {/* </AuthProvider> */}
-    </BrowserRouter>
-   
+      {/* </AuthProvider> */}   
   </React.StrictMode>,
   document.getElementById('root')
 );

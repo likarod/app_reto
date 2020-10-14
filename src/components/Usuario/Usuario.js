@@ -49,6 +49,9 @@ class Usuario extends Component {
           <Dropdown.Item eventKey="1">
             <Link to="/registro">Registro</Link>
           </Dropdown.Item>
+          <Dropdown.Item eventKey="2">
+            <Link to="/login">Mi cuenta</Link>
+          </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       

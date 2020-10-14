@@ -16,23 +16,21 @@ function App() {
   return (
     <div className="App">
       {/* <FirebaseAuthProvider {...config} firebase={firebase}> */}
+      <BrowserRouter>
        <header>
-        <BrowserRouter>
           <Switch>
             <Nav/>
           </Switch>
-        </BrowserRouter>
       </header>
       <main>
-        <BrowserRouter>
           <Switch>
             <Main/>
           </Switch>
-        </BrowserRouter>
         <footer>
           <Footer/>
         </footer>
       </main>
+      </BrowserRouter>  
       {/* </FirebaseAuthProvider> */}
     </div>
     
