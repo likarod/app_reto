@@ -43,8 +43,7 @@ class Buscador extends Component {
                     </div>
                   </div>
                 </label>
-              </div>
-                
+              </div>   
               {this.state.errormessage? <p>{this.state.errormessage}</p>:""}  
             </form>  
           </div> 

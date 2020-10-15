@@ -3,9 +3,6 @@ import {Link} from 'react-router-dom';
 import {Dropdown} from 'react-bootstrap';
 
 import Menu from '../Menu/Menu'
-import Usuario from '../Usuario/Usuario'
-
-
 import './Nav.css';
 
 

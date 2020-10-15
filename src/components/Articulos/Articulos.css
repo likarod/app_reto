@@ -2,87 +2,79 @@
 
 .body_articulo{
     display: grid;
-    background: snow;
+    background: rgb(252, 252, 252);
     font-family: 'Lato', sans-serif,sans-serif;
     text-transform: uppercase;
 }
 
 .container_art{
     position: relative;
-    margin: auto;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     width: 273px;
-    height: 288px;
-    background: #f5f5f5;
-    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    height: 370px;
+    background: #fafafa;
+    box-shadow: 5px 5px 15px rgba(82, 87, 83, 0.5);
     border-radius: 22px;
 }
 
-    .productos {
-        margin-bottom: 0;
-        /* position: absolute;
-        width: 40%;
-        height: 100%;
-         top: 10%;
-        left: 60%;  */
+.nombreProductor{
+    margin-top: 10px;
+}
+    .imgProductos{
+        /* width: 290px; */
+        height: 120px;
     }
-
         .productor{
-            font-size: 0.6em;
+            font-size: 0.8em;
             color:  #4d3306;
             letter-spacing: 1px;
         }
 
         .nombre{
-            font-size: 1.2em;
+            font-size: 1.4em;
             color: #c47e07;
             margin-top: -5px;
         }
 
-        .provincia{
-            font-size: 1em;
-            color:#644818;
-        }
-
         .precios{ 
-            font-size: 1em;
+            font-size: 1.2em;
             color: #c08c33;
         }
 
-        .imgProductos{
-            /* width: 290px; */
-            height: 70px;
-            margin-top: 30px;
-        }
-
-        .desc {
-            text-transform: none;
+        .direccion {
             letter-spacing: 0;
             margin-bottom: 0;
             color: #4e4e4e;
-            font-size: 0.5em;
-            line-height: 1.6em;
-            /* text-align: justify; */
+            font-size: 1em;
+            line-height: 1em;
+        }
+        
+        box-icon{
+            margin-right: 2px;
         }
           
-        .btnProductos{
-            display: block;
+        .canton{
+            font-size: 1em;
+            letter-spacing: 0;
+            color: #4e4e4e;
         }
 
-        button.agregar, button.cantidad {
-            background: #caa565;
+        button.agregar{
+            background: none;
             padding: 7px; 
             outline: none;
             border: 0;
             margin: 0.2px;
-            border-radius: 10px;
             letter-spacing: 1px;
-            color: #f5f5f5;
+            color: #108805;
             cursor: pointer;
+            font-size: 0.8em;
         }
 
-        button.agregar:hover, 
-        button.cantidad:hover {
+        button.agregar:hover {
             background: #9c6e1e;
             transition: all 0.4s ease-in-out;
         }

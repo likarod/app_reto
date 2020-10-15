@@ -42,7 +42,7 @@
                 
                 .div_items:hover,
                 li:hover > a box-icon {
-                    background-color: #76b607;
+                    background-color: rgb(224, 224, 224);
                     color: #fff;
                     text-decoration-line: none; 
                 }

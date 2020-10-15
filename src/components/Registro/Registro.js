@@ -24,13 +24,13 @@ class Registro extends Component {
         <div className="Registro">
           <h2>Crear cuenta</h2>
           <hr/>
-          <div className="prod">
+          <div className="Prod">
             <img src="/media/replant.png" alt="productor"/>
-            <Link to={"/iniciosesion/" + this.state.param2}>¿Vendes?</Link>
+            <Link to={"/iniciosesion/" + this.state.param2} className="btnProd">¿Vendes?</Link>
           </div>
-          <div className="consum">
+          <div className="Consum">
             <img src="/media/organic-bag.png" alt="consumidor"/>
-            <Link to={"/iniciosesion/" + this.state.param1}>¿Compras?</Link>
+            <Link to={"/iniciosesion/" + this.state.param1} className="btnConsum">¿Compras?</Link>
           </div>
         </div>
       </div>

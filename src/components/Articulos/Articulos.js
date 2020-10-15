@@ -7,12 +7,12 @@ export class Articulos extends Component {
     constructor(props){
         super(props);
         this.state = {
+            productor: this.props.datos.productor,
             img: this.props.datos.img,
             nombre: this.props.datos.nombre,
-            descripcion: this.props.datos.descripcion,
-            productor: this.props.datos.productor,
-            provincia: this.props.datos.provincia,
-            precios: this.props.datos.precios
+            precios: this.props.datos.precios,
+            direccion: this.props.datos.direccion,
+            canton: this.props.datos.canton, 
         }
     }
     render() {
@@ -20,26 +20,29 @@ export class Articulos extends Component {
             <article>
                 <div className="body_articulo">
                     <div className="container_art">
+                        <div className="nombreProductor">
+                            <p className="productor">{this.state.productor}</p>
+                        </div>
                         <div className="imagenes">
                             <img src={this.state.img} class="imgProductos" alt="productos"/>
-                        </div>
-                        
+                        </div>  
+                        <hr/>
                         <div className="productos">
-                            <p className="productor">{this.state.productor}</p>
                             <h2 className="nombre">{this.state.nombre}</h2>
-                            <h4 className="provincia">{this.state.provincia}</h4>
                             <h3 className="precios">{this.state.precios}</h3>
-                            <p className="desc">{this.state.descripcion}</p>
+                            <p className="direccion">
+                            <box-icon name='map' size="xs"></box-icon> 
+                                {this.state.direccion}</p>
+                            <p className="canton">   
+                            {this.state.canton}</p>
                         </div>
                         <div className="btnProductos">
                             <Link to="/pedidos">
-                              <button class="agregar"> 
-                              Añadir al carrito
+                              <button class="agregar">
+
+                              AÑADIR
                               </button>  
                             </Link>
-                            <button className="cantidad">
-                                Cantidad 
-                            </button>  
                         </div>
                     </div> 
                 </div>

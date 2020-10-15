@@ -1,28 +1,37 @@
 const Items = [
     {
-        img: "/media/988.jpg",
-        nombre: 'Papas ecológicas',
-        descripcion: 'Cultivo de papa',
         productor: 'Francisco Martínez Gómez',
-        provincia: 'Pichincha',
-        precios: '2 $/K'
+        img: "/media/988.jpg",
+        precios: '2 $/K',
+        nombre: 'Papas ecológicas',
+        direccion: "VIA SAN DIMAS",
+        canton: "Pedro Vicente Maldonado",
     },
+
     {
-        img: "/media/68.jpg",
-        nombre: 'Maiz ecológico',
-        descripcion: 'Cultivo de maíz',
         productor: 'Rosalinda Echevarria',
-        provincia: 'Pichincha',
-        precios: '1 $/K'
+        img: "/media/68.jpg",
+        nombre: 'Maiz',
+        precios: '1 $/K',
+        direccion: 'C// MEDARDO SILVA', 
+        canton: "Quito",       
 
     },
     {
+        productor: 'Mauricio de Jesús',
         img: '/media/13542.jpg',
         nombre: 'Guisantes',
-        descripcion: 'Cultivo de arverjas',
-        productor: 'Mauricio de Jesús',
-        provincia: 'Pichincha',
-        precios: '0,74 $/K'
+        precios: '0,74 $/K',
+        direccion: 'C// QUITO',
+        canton: 'Pedro Moncayo',    
+    },
+    {
+        productor: 'Marcela Gonzalez',
+        img: '/media/68.jpg',
+        nombre: 'Maíz ecológico',
+        precios: '1,10 $ K',
+        direccion: 'C// GANGOTENA',
+        canton: 'Rumiñahui'
     }
 ]
 

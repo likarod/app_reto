@@ -32,7 +32,6 @@ class Main extends Component {
   render() {
     return (
       <section>
-        <section className="fondo">
           <Switch>
             <Route exact path="/" component={RegistreWithRouter}/>            
             <Route exact path="/iniciosesion/:value" component={InicioSesion}/>
@@ -43,8 +42,6 @@ class Main extends Component {
             <Route exact path="/contacto" component={Contact}/>
             <Route excat path="/about" component={About}/>
           </Switch>
-        </section>
-        
       </section>
     );
   }
