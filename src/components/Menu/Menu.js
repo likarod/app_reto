@@ -40,23 +40,23 @@ class Menu extends Component {
   render() {
     return (
       <Dropdown>
-      <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-        <box-icon name='menu'></box-icon>
-      </Dropdown.Toggle>
-      <Dropdown.Menu as={CustomMenu}>
-        <Dropdown.Item eventKey="1">
-          <Link to="/login"><Usuario/></Link>
-        </Dropdown.Item>
-        <hr></hr>
-        <Dropdown.Item eventKey="2">
-          <Link to="/buscador">Inicio</Link>
-        </Dropdown.Item>
-        <Dropdown.Item eventKey="3">
-          <Link to="/about">Sobre nosotros</Link>
-        </Dropdown.Item>
-        <Dropdown.Item eventKey="4">
-          <Link to="/contacto">Contacto</Link>
-        </Dropdown.Item>
+        <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+          <box-icon name='menu'></box-icon>
+        </Dropdown.Toggle>
+        <Dropdown.Menu as={CustomMenu}>
+          <Dropdown.Item eventKey="1">
+            <Link to="/login"><Usuario/></Link>
+          </Dropdown.Item>
+          <hr></hr>
+          <Dropdown.Item eventKey="2">
+            <Link to="/buscador">Inicio</Link>
+          </Dropdown.Item>
+          <Dropdown.Item eventKey="3">
+            <Link to="/about">Sobre nosotros</Link>
+          </Dropdown.Item>
+          <Dropdown.Item eventKey="4">
+            <Link to="/contacto">Contacto</Link>
+          </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
     );

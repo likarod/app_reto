@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component} from 'react';
 import { Link } from 'react-router-dom';
 import {Dropdown} from 'react-bootstrap';
 import './Carrito.css';

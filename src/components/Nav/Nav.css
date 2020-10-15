@@ -8,6 +8,7 @@
         justify-content: space-between;
         font-size: calc(10px + 2vmin);   
         height: 45px;
+        justify-content: baseline;
     }
         div.header_menu_drch{
             display: flex;
@@ -21,18 +22,21 @@
         }
             .div_items, .dropdown{
                 margin:3px 0px;
+                justify-content: baseline;
             }
 
             .Lista_nav{    
                 display: flex;
                 flex-direction: row;
                 list-style-type: none; 
+                
             }
 
                 li{
                     transition: hover 0.2s linear;
                     cursor: pointer;
-                    padding:2px 10px;
+                    padding-left: 5px;
+                    padding-top: 3px;
                 }
 
                 a{
@@ -45,9 +49,4 @@
                     background-color: rgb(224, 224, 224);
                     color: #fff;
                     text-decoration-line: none; 
-                }
-
-                .link{
-                    color:black;
-                    text-decoration-line: none;
                 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 export default class MiCuenta extends Component {
     render() {
@@ -10,7 +11,9 @@ export default class MiCuenta extends Component {
                     <box-icon name='user-circle' size="lg"></box-icon>
                     </div>
                     <div className="editar">
-                        <button>Edita tu perfil</button>
+                        <Link to="/edit">
+                           <button>Edita tu perfil</button> 
+                        </Link>
                     </div>
                     <hr/>
                     <div className="informacion">

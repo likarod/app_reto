@@ -37,12 +37,7 @@ export class Articulos extends Component {
                             {this.state.canton}</p>
                         </div>
                         <div className="btnProductos">
-                            <Link to="/pedidos">
-                              <button class="agregar">
-
-                              AÑADIR
-                              </button>  
-                            </Link>
+ 
                         </div>
                     </div> 
                 </div>

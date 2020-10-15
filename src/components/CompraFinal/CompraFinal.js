@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './InfoCarrito.css'
+import './CompraFinal.css'
 
-export default function InfoCarrito() {
+export default function CompraFinal() {
     return (
         <div>
-            <div className="mensajeCarrito">
+            <div className="mensajeCompra">
                 <table id="lista-carrito" class="u-full-width">
                     <thead>
                         <tr>
@@ -15,10 +15,11 @@ export default function InfoCarrito() {
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody></tbody>
-                    <box-icon name='plus-circle'></box-icon>
+                    <tbody>
+                    </tbody>
+                    
                 </table>
-                <a href="/" id="vaciar-carrito" className="vaciar">Vaciar Carrito</a>
+                <a href="/cantidad" id="vaciar-carrito" className="vaciar">Vaciar Carrito</a>
             </div>
         </div>
     )

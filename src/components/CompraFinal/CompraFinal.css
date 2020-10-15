@@ -1,0 +1,15 @@
+.mensajeCompra{
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.u-full-width{
+    width: 100%;
+    box-sizing: border-box;
+}
+    

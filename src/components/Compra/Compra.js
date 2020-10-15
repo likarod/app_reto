@@ -30,20 +30,20 @@ export default class Compra extends Component {
                         </div>
                         <hr/>
                         <div className="body">
-                            <div>
-                            <img src="/media/68.jpg" alt="producto"/>
+                            <div className="carritoImg">
+                            
                             </div>
-                            <div className="producto_info">
-                                <div className="producto_info_nombre">
+                            <div className="compra_info">
+                                <div className="compra_info_nombre">
                                 <a href="/pedidos">Patatas ecológicas</a> 
                                 </div>
-                                <div className="producto_info_precio">
+                                <div className="compra_info_precio">
                                 <span className="precio"> 2$</span>
                             </div>
                         </div>
-                        <div className="linea_accion_producto">
+                        <div className="linea_accion_compra">
                             <div>
-                            <input className="cantidad_producto" type="text" value={this.state.valor} name="cantidad_producto" min="1" max="9" onChange={this.aumentarCantidad}></input>
+                            <input className="cantidad_compra" type="text" value={this.state.valor} name="cantidad_producto" min="1" max="9" onChange={this.aumentarCantidad}></input>
                             </div>
                             <div className="cantidad_final">
                                 <span className="cantidad"></span>
@@ -58,7 +58,7 @@ export default class Compra extends Component {
                         </span>
                     </OverlayTrigger>    
                     </div>
-                    <div className="compra_final">
+                    {/* <div className="compra_final">
                         <a href="#" id="shoppingCard">
                             <div id="carrito" className="animElem elmActive">
                                 <div id="mango"></div>
@@ -67,7 +67,8 @@ export default class Compra extends Component {
                             </div>
                             <div id="check" className="animElem"></div>
                         </a>
-                    </div>
+                        <box-icon name='plus-circle'></box-icon>
+                    </div> */}
                 </div>
             </article>
         )

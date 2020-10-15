@@ -1,5 +1,4 @@
-const Recomendacion =  [
-    
+const Recomendacion =  [ 
     {
         productor: 'Francisco Martínez Gómez',
         img: "/media/988.jpg",
@@ -9,3 +8,6 @@ const Recomendacion =  [
         canton: "Pedro Vicente Maldonado",
     }, 
 ]
+
+
+export default Recomendacion;

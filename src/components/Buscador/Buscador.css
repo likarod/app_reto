@@ -92,3 +92,7 @@
                 .input_buscador:focus-visible{
                     outline: none;
                 }
+
+        .divRecomendacion{
+            height: 300px;
+        }

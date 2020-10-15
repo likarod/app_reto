@@ -1,87 +1,30 @@
 
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Contact extends Component {
     render() {
         return (
-            <div>
-                <div>
-                    <div>
-                        <from>
-                            <div>
-                                <h3>Hola <span></span>, ¿en qué podemos ayudarte?</h3>
-                            </div>
-                            <div>
-                                <label htmlFor="name"> Nombre
-                                <input type="text" name="nombre"/>
-                                </label>
-                            </div>
-                            <div>
-                                <label htmlFor="email">Email:
-                                <input type="email" name="email"/>
-                                </label>
-                            </div>
-                            <div>
-                                <label htmlFor="telefono"> Telefono
-                                {/* <select name="" id="" disabled="disabled">  
-                                </select> */}
-                                <input type="number" name="telefono"/>
-                                </label>
-                            </div>
-                            <div>
-                                <label htmlFor="comentarios">
-                                <div>
-                                    <textarea name="mensjae" id="mensaje_contacto" cols="30" rows="10"></textarea>
-                                </div>    
-                                </label>
-                            </div>
-                            <div>
-                                <input type="submit" value="Enviar"/>
-                            </div>
-                        </from>
+            <article>
+                <div className="Contacto">
+                    <h3>Hola
+                        <span></span>
+                        ¿en qué podemos ayudarte?
+                    </h3>
+                    <p>Por favor, elige la mejor opción</p>
+                    <div className="Prod">
+                        <Link to="/clienteprod">
+                            Contacto para productores
+                        </Link>
+                    </div>
+                    <div className="Consume">
+                        <Link to="/clientecons">
+                            Contacto para consumidores
+                        </Link>
                     </div>
                 </div>
-            </div>
+            </article>
         )
     }
 }
 
-
-
-// const Contact = () => {
-//     return(
-//         <React.createElement>
-//             <div>
-//                 <div>
-//                 <div>
-//                     <from>
-//                     <div>
-//                         <h1>¿Quieres contactarnos?</h1>
-//                         <h2>Rellena este formulario</h2>
-//                     </div>
-//                     <div>
-//                         <label htmlFor="name"> Nombre
-//                         <input type="text" name="nombre"/>
-//                         </label>
-//                     </div>
-//                     <div>
-//                         <label htmlFor="email">Email:
-//                         <input type="email" name="email"/>
-//                         </label>
-//                     </div>
-//                     <div>
-//                         <label htmlFor=""></label>
-//                     </div>
-//                     <div>
-//                         <input type="submit" value="Enviar"/>
-//                     </div>
-//                     </from>
-//                 </div>
-//                 </div>
-//             </div>
-//         </React.createElement>  
-//     )
-   
-// }   
-
-// export default Contact;

@@ -8,11 +8,15 @@ import MiCuenta from '../Registro/MiCuenta'
 import Buscador from '../Buscador/Buscador';
 import Contenidos from '../Contenido/Contenido'
 import Compra from '../Compra/Compra';
+import CompraFinal from '../CompraFinal/CompraFinal';
 
 import Contact from '../Contact/Contact'
+import ContactProducter from '../Contact/ContactProducter'
+import ContactConsumer from '../Contact/ContactConsumer'
 import About from '../About/About'
 
 import './Main.css';
+
 
 class Main extends Component {
   // constructor(props){
@@ -38,8 +42,11 @@ class Main extends Component {
             <Route exact path="/login" component={MiCuenta}/>
             <Route exact path="/buscador" component={Buscador}/>
             <Route exact path="/articulos/:producto" component={Contenidos}/>
-            <Route exact path="/pedidos" component={Compra}/>      
+            <Route exact path="/pedidos" component={Compra}/>   
+            <Route exact path="/comprafinal" component={CompraFinal}/>   
             <Route exact path="/contacto" component={Contact}/>
+            <Route exact path="clienteprod" component={ContactProducter}/>
+            <Route exact path="clientecons" component={ContactConsumer}/>
             <Route excat path="/about" component={About}/>
           </Switch>
       </section>

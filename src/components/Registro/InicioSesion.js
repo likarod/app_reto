@@ -69,6 +69,8 @@ mostrarProductor = () => {
                 <Form
                 claseDiv="cntStock"
                 claseForm="form"
+                classP="stockParrafo"
+                p="Cantidad de productos"
                 classInput="cntS"
                 type="number"
                 name="stock"
@@ -120,8 +122,8 @@ render() {
       <div>
         {this.mostrarProductor()}
         {this.mostrarConsumidor()}
-        <div>
-          <button>Crear cuenta</button>
+        <div className="submitForm">
+          <input type="submit" value="Crear cuenta"/>
         </div>
       </div>
     )

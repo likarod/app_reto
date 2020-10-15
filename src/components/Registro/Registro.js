@@ -20,7 +20,7 @@ class Registro extends Component {
   render() {
 
     return (
-      <div>
+      <article>
         <div className="Registro">
           <h2>Crear cuenta</h2>
           <hr/>
@@ -33,7 +33,7 @@ class Registro extends Component {
             <Link to={"/iniciosesion/" + this.state.param1} className="btnConsum">¿Compras?</Link>
           </div>
         </div>
-      </div>
+      </article>
     );
   }
 }

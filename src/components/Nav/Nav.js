@@ -28,6 +28,11 @@ class Nav extends Component {
         <div className="header_menu_drch">
           <ul className="Lista_nav">
             <li><Menu/></li>
+            {/* <li>
+              <Link to="/buscador" className="linkHome">
+                <box-icon name='home' ></box-icon>
+              </Link> 
+            </li> */}
           </ul>
         </div>
         <div className="header_menu_izq">
@@ -41,9 +46,6 @@ class Nav extends Component {
                     </Link>
                   </Dropdown.Toggle>
                 </li> 
-              </div>
-              <div className="div_items">
-
               </div>
             </Dropdown>
           </ul>

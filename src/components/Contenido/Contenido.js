@@ -9,7 +9,7 @@ export default class Contenido extends Component {
         super(props);
          this.state = {
             productos: [],
-            param:this.props.match.params,
+            // param:this.props.match.params,
         }
         
     }
@@ -32,7 +32,6 @@ export default class Contenido extends Component {
         return (
             <section>
                 <div className="seccion">
-                    <h1>{this.state.param.producto}</h1>
                    {this.state.productos.map(articulos => <Articulos datos={articulos} />)} 
                 </div>
                 {/*  Esta será la función que me creará nuevos artículos. Esta viene directamente del componentes Artículos {this.addItems()}*/}

@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
+import Recomendacion from '../Recomendacion/Recomendacion'
+import Articulo from '../Articulos/Articulos'
+
 import './Buscador.css';
 
 class Buscador extends Component {
   constructor(props){
     super(props);
     this.state = {
+      recomendacion: [],
       errormessange: "",
       input: "",
     };
@@ -15,15 +19,10 @@ class Buscador extends Component {
   cambiarEstado = (e) => {
     this.setState({input: e.target.value})
   }
- 
-  // componentWillMount(){}
-  // componentDidMount(){}
-  // componentWillUnmount(){}
 
-  // componentWillReceiveProps(){}
-  // shouldComponentUpdate(){}
-  // componentWillUpdate(){}
-  // componentDidUpdate(){}
+  componentDidMount(){
+    this.setState({recomendacion: Recomendacion})
+  }
 
   render() {
     return (
@@ -47,6 +46,9 @@ class Buscador extends Component {
               {this.state.errormessage? <p>{this.state.errormessage}</p>:""}  
             </form>  
           </div> 
+          <div className="divRecomendacion">
+          {/* {this.state.recomendacion.map(productos => <Articulo datos={productos}/>)} */}
+          </div>
       </article>
      
     
