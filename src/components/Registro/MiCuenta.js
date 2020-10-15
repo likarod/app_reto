@@ -11,7 +11,7 @@ export default class MiCuenta extends Component {
                     <box-icon name='user-circle' size="lg"></box-icon>
                     </div>
                     <div className="editar">
-                        <Link to="/edit">
+                        <Link to="/editar">
                            <button>Edita tu perfil</button> 
                         </Link>
                     </div>
@@ -30,6 +30,7 @@ export default class MiCuenta extends Component {
                     <hr/>
                 </div>
                 <div className="cerrar">
+                    <Link to="/cerrar"></Link>
                     <button>Cerrar Sesion</button>
                 </div>
             </article>

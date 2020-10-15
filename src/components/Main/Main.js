@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import RegistreWithRouter from '../Registro/Registro'
 import InicioSesion from '../Registro/InicioSesion'
 import MiCuenta from '../Registro/MiCuenta'
+import Edit from '../Registro/Edit'
 
 import Buscador from '../Buscador/Buscador';
 import Contenidos from '../Contenido/Contenido'
@@ -40,10 +41,13 @@ class Main extends Component {
             <Route exact path="/" component={RegistreWithRouter}/>            
             <Route exact path="/iniciosesion/:value" component={InicioSesion}/>
             <Route exact path="/login" component={MiCuenta}/>
+            <Route exact path="/editar" component={Edit}/>
+
             <Route exact path="/buscador" component={Buscador}/>
             <Route exact path="/articulos/:producto" component={Contenidos}/>
             <Route exact path="/pedidos" component={Compra}/>   
-            <Route exact path="/comprafinal" component={CompraFinal}/>   
+            <Route exact path="/comprafinal" component={CompraFinal}/>  
+             
             <Route exact path="/contacto" component={Contact}/>
             <Route exact path="clienteprod" component={ContactProducter}/>
             <Route exact path="clientecons" component={ContactConsumer}/>

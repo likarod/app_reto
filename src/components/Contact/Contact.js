@@ -9,7 +9,7 @@ export default class Contact extends Component {
                 <div className="Contacto">
                     <h3>Hola
                         <span></span>
-                        ¿en qué podemos ayudarte?
+                    ¿en qué podemos ayudarte?
                     </h3>
                     <p>Por favor, elige la mejor opción</p>
                     <div className="Prod">

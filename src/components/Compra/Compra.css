@@ -127,3 +127,21 @@
   -moz-transform: scale(1) !important;
   transform: scale(1) !important;
 }
+
+.linea_accion_compra{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.compra_info_precio{
+  font-size: 1.5em;
+}
+
+.cantidad_input{
+  width: 70px;
+}
+
+.cantidad_compra {
+  width: 35%;
+}
