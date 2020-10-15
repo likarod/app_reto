@@ -10,10 +10,6 @@
     display: flex;
 }
 
-img{
-    height: 20px;
-}
-
 a{
     display: flex;
     justify-content: center;

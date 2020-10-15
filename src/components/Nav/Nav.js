@@ -4,7 +4,7 @@ import {Dropdown} from 'react-bootstrap';
 
 import Menu from '../Menu/Menu'
 import Usuario from '../Usuario/Usuario'
-import InfoCarrito from '../InfoCarrito/InfoCarrito';
+
 
 import './Nav.css';
 
@@ -35,22 +35,20 @@ class Nav extends Component {
         </div>
         <div className="header_menu_izq">
           <ul className="Lista_nav">
-            <div className="div_items">
-                <Dropdown>
-                  <li>
-                    <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+            <Dropdown>
+              <div className="div_items">
+                <li>
+                  <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+                    <Link to="/pedidos" className="link">
                       <box-icon name='cart-alt' size="sm"></box-icon>
-                      <Link to="/pedidos" className="link">
-                        Cesta
-                        {/* <span id="Item_cantidad"><InfoCarrito/></span> */}
-                      </Link>
-                    </Dropdown.Toggle>
-                  </li>
-                </Dropdown>
-            </div>
-            <div className="div_items">
-              <li><Usuario/></li>
-            </div>
+                    </Link>
+                  </Dropdown.Toggle>
+                </li> 
+              </div>
+              <div className="div_items">
+
+              </div>
+            </Dropdown>
           </ul>
         </div>
       </div>

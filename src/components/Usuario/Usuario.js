@@ -43,19 +43,15 @@ class Usuario extends Component {
       <div>
       <Dropdown>
         <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-        <box-icon name='user'></box-icon>
+          <box-icon name='user'></box-icon>
         </Dropdown.Toggle>
-        <Dropdown.Menu as={CustomMenu}>
-          <Dropdown.Item eventKey="1">
-            <Link to="/registro">Registro</Link>
-          </Dropdown.Item>
-          <Dropdown.Item eventKey="2">
-            <Link to="/login">Mi cuenta</Link>
-          </Dropdown.Item>
-        </Dropdown.Menu>
+        <Dropdown.Toggle as={CustomToggle} id="InicioSesion">
+          <Link to="/">Crear cuenta</Link>
+        </Dropdown.Toggle>
+        <Dropdown.Toggle as={CustomToggle} id="Cuenta">
+          <Link to="/login">Mi cuenta</Link>
+        </Dropdown.Toggle>
       </Dropdown>
-      
-
       </div>
     );
   }

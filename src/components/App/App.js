@@ -23,6 +23,7 @@ function App() {
           </Switch>
       </header>
       <main>
+      <hr/>
           <Switch>
             <Main/>
           </Switch>

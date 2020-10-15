@@ -1,6 +1,8 @@
 import React, { Component, useState } from 'react';
 import {Dropdown} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+
+import Usuario from '../Usuario/Usuario'
 import './Menu.css';
 
 
@@ -43,12 +45,16 @@ class Menu extends Component {
       </Dropdown.Toggle>
       <Dropdown.Menu as={CustomMenu}>
         <Dropdown.Item eventKey="1">
-          <Link to="/">Inicio</Link>
+          <Link to="/login"><Usuario/></Link>
         </Dropdown.Item>
+        <hr></hr>
         <Dropdown.Item eventKey="2">
-          <Link to="/about">Sobre nosotros</Link>
+          <Link to="/buscador">Inicio</Link>
         </Dropdown.Item>
         <Dropdown.Item eventKey="3">
+          <Link to="/about">Sobre nosotros</Link>
+        </Dropdown.Item>
+        <Dropdown.Item eventKey="4">
           <Link to="/contacto">Contacto</Link>
         </Dropdown.Item>
       </Dropdown.Menu>

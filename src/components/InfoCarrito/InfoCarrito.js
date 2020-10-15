@@ -16,6 +16,7 @@ export default function InfoCarrito() {
                         </tr>
                     </thead>
                     <tbody></tbody>
+                    <box-icon name='plus-circle'></box-icon>
                 </table>
                 <a href="/" id="vaciar-carrito" className="vaciar">Vaciar Carrito</a>
             </div>

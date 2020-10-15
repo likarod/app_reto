@@ -6,11 +6,10 @@ export default class Footer extends Component {
         return (
             <div>
                 <div className="container">
-                    <img src="/media/lambda.svg" alt="logo"/>
-                    <picture className="logosFooter">
+                    <div className="logosFooter">
                         <box-icon type='logo' name='facebook-circle'></box-icon>
                         <box-icon name='instagram' type='logo' ></box-icon>
-                    </picture>
+                    </div>
                     <div className="enlacesFooter">
                         <a href="/">Aviso legal</a>
                         <a href="/">Política de condicones</a>

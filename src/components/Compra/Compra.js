@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {OverlayTrigger,Tooltip, Button} from 'react-bootstrap';
+import './Compra.css'
 
 export default class Compra extends Component {
     constructor(props){
@@ -13,6 +14,11 @@ export default class Compra extends Component {
     aumentarCantidad = (e) => {
         this.setState({valor: e.target.value})
     }
+
+    // cambiarEstado = () => {
+    //     this.setState({estado: "elmActive"})
+    //     console.log(this.estado)
+    // }
 
     render() {
         return (
@@ -53,13 +59,13 @@ export default class Compra extends Component {
                     </OverlayTrigger>    
                     </div>
                     <div className="compra_final">
-                        <a href="/" id="shoppingCard">
-                            <div id="carrito" class="animElem elmActive">
+                        <a href="#" id="shoppingCard">
+                            <div id="carrito" className="animElem elmActive">
                                 <div id="mango"></div>
                                 <div id="cesta"></div>
                                 <div id="ruedas"></div>
                             </div>
-                            <div id="check" class="animElem"></div>
+                            <div id="check" className="animElem"></div>
                         </a>
                     </div>
                 </div>
