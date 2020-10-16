@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 import Recomendacion from '../Recomendacion/Recomendacion'
-import Articulo from '../Articulos/Articulos'
+// import Articulo from '../Articulos/Articulos'
 
 import './Buscador.css';
 

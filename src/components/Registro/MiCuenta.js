@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import { UsuarioConsumer } from '../../UsContext'
-import Usuario from '../Usuario/Usuario'
 
 export default class MiCuenta extends Component {
     render() {

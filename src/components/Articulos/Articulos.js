@@ -30,15 +30,23 @@ export class Articulos extends Component {
                         <div className="productos">
                             <h2 className="nombre">{this.state.nombre}</h2>
                             <h3 className="precios">{this.state.precios}</h3>
-                            <p className="direccion">
-                            <box-icon name='map' size="xs"></box-icon> 
-                                {this.state.direccion}</p>
+                            <Link to="/ubicacion">
+                                <p className="direccion">
+                                    <box-icon name='map' size="xs"></box-icon> 
+                                    {this.state.direccion}
+                                </p>
+                            </Link>
                             <p className="canton">   
-                            {this.state.canton}</p>
+                                {this.state.canton}
+                            </p>
                         </div>
                         <div className="btnProductos">
-                            
-                        </div>
+                            <Link to="/pedidos">
+                                <button class="agregar">	
+                                    AÑADIR	
+                                </button>
+                            </Link> 
+                        </div>    
                     </div> 
                 </div>
                 

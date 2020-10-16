@@ -128,20 +128,44 @@
   transform: scale(1) !important;
 }
 
+.containerCompra{
+  position: relative;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 273px;
+  height: 370px;
+  background: #fafafa;
+  box-shadow: 5px 5px 15px rgba(82, 87, 83, 0.5);
+  border-radius: 22px;
+}
+
 .linea_accion_compra{
   display: flex;
   justify-content: center;
   flex-direction: row;
+  align-items: stretch;
 }
 
-.compra_info_precio{
-  font-size: 1.5em;
-}
+    .compra_info_precio{
+      font-size: 1.5em;
+    }
 
-.cantidad_input{
-  width: 70px;
-}
+    .cantidad_input{
+      margin: 0;
+      width: 4em;
+    }
 
-.cantidad_compra {
-  width: 35%;
-}
+    .cantidad_compra {
+      width: 70%;
+    }
+
+    .mas, .menos{
+      background-color: none;
+      border: 0;
+      outline: none;
+    }
+    .btnBasura{
+      margin-top: 7px;
+    }

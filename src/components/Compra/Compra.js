@@ -12,7 +12,7 @@ export default class Compra extends Component {
     }
 
     aumentarCantidad = (e) => {
-        this.setState({valor: e.target.value})
+        this.setState({valor: e.valor+1})
     }
 
     // cambiarEstado = () => {
@@ -53,26 +53,35 @@ export default class Compra extends Component {
                             </div>
                         </div>
                         <div className="linea_accion_compra">
-                            <box-icon name='minus-circle'></box-icon>
+                            <button className="menos"> 
+                              <box-icon  name='minus-circle'></box-icon>  
+                            </button>
+                            
                             <div className="cantidad_input">
-                                <input className="cantidad_compra" type="text" value={this.state.valor} name="cantidad_producto" min="1" max="9" onChange={this.aumentarCantidad}></input>
+                                <input className="cantidad_compra" type="text" value={this.state.valor} name="cantidad_producto" min="1" max="9"></input>
                             </div>
-                            <box-icon name='plus-circle' ></box-icon>
+                            <button onClick={this.aumentarCantidad} className="mas" >
+                                <box-icon name='plus-circle' size="sm"></box-icon>
+                            </button>
+                            
                             <div className="cantidad_final">
                                 <span className="cantidad"></span>
                             </div>
                         </div>
                     </div>
-                    <OverlayTrigger overlay={<Tooltip id="tooltip">¿Estás seguro?</Tooltip>}>
-                        <span className="d-inline-block">
-                            <Button style={{ pointerEvents: 'active' }}>
-                                <box-icon name='trash'></box-icon>
-                            </Button>
-                        </span>
-                    </OverlayTrigger>    
+                        <div className="btnBasura">
+                         <OverlayTrigger overlay={<Tooltip id="tooltip">¿Estás seguro?</Tooltip>}>
+                            <span className="d-inline-block">
+                                <Button variant="outline-danger">
+                                    <box-icon name='trash' ></box-icon>
+                                </Button>
+                            </span>
+                        </OverlayTrigger>   
                     </div>
-                     <div className="compra_final"> 
-                        {/* <a href="#" id="shoppingCard">
+                    </div>
+                    <div className="compra_final"> 
+                        {/* style={{ pointerEvents: 'active' }
+                        <a href="#" id="shoppingCard">
                             <div id="carrito" className="animElem elmActive">
                                 <div id="mango"></div>
                                 <div id="cesta"></div>
