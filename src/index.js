@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-
 import './index.css';
 import App from '../src/components/App/App';
 import * as serviceWorker from './serviceWorker';
@@ -9,9 +7,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   
   <React.StrictMode> 
-      {/* <AuthProvider> */}
-        <App />
-      {/* </AuthProvider> */}   
+      <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -45,7 +45,7 @@ class Menu extends Component {
         </Dropdown.Toggle>
         <Dropdown.Menu as={CustomMenu}>
           <Dropdown.Item eventKey="1">
-            <Link to="/login"><Usuario/></Link>
+            <Link to="/micuenta"><Usuario/></Link>
           </Dropdown.Item>
           <hr></hr>
           <Dropdown.Item eventKey="2">

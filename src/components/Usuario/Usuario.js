@@ -49,7 +49,7 @@ class Usuario extends Component {
           <Link to="/">Crear cuenta</Link>
         </Dropdown.Toggle>
         <Dropdown.Toggle as={CustomToggle} id="Cuenta">
-          <Link to="/login">Mi cuenta</Link>
+          <Link to="/micuenta">Mi cuenta</Link>
         </Dropdown.Toggle>
       </Dropdown>
       </div>

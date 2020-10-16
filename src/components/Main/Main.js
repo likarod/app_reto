@@ -17,6 +17,7 @@ import ContactConsumer from '../Contact/ContactConsumer'
 import About from '../About/About'
 
 import './Main.css';
+import InfoProductor from '../Registro/InfoProductor';
 
 
 class Main extends Component {
@@ -40,7 +41,8 @@ class Main extends Component {
           <Switch>
             <Route exact path="/" component={RegistreWithRouter}/>            
             <Route exact path="/iniciosesion/:value" component={InicioSesion}/>
-            <Route exact path="/login" component={MiCuenta}/>
+            <Route exact path="/infoproductor" component={InfoProductor}/>
+            <Route exact path="/micuenta" component={MiCuenta}/>
             <Route exact path="/editar" component={Edit}/>
 
             <Route exact path="/buscador" component={Buscador}/>

@@ -37,7 +37,7 @@ export class Articulos extends Component {
                             {this.state.canton}</p>
                         </div>
                         <div className="btnProductos">
- 
+                            
                         </div>
                     </div> 
                 </div>
