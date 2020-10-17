@@ -6,6 +6,7 @@ import InicioSesion from '../Registro/InicioSesion'
 import MiCuenta from '../Registro/MiCuenta'
 import Edit from '../Registro/Edit'
 
+import Welcome from '../Welcome/Welcome'
 import Buscador from '../Buscador/Buscador';
 import Contenidos from '../Contenido/Contenido'
 import Compra from '../Compra/Compra';
@@ -37,9 +38,10 @@ class Main extends Component {
 
   render() {
     return (
-      <section>
+      <section className="fondo">
           <Switch>
-            <Route exact path="/" component={RegistreWithRouter}/>            
+            <Route exact path="/" component={Welcome}/>
+            <Route exact path="/registro" component={RegistreWithRouter}/>            
             <Route exact path="/iniciosesion/:value" component={InicioSesion}/>
             <Route exact path="/infoproductor" component={InfoProductor}/>
             <Route exact path="/micuenta" component={MiCuenta}/>

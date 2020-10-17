@@ -1,0 +1,9 @@
+.cargando{
+    position: absolute;
+    width: 408px;
+    height: 823px;
+    left: -17px;
+    top: -6px;
+
+    background: rgba(255, 211, 97, 0.2);
+}

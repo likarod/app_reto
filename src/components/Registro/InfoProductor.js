@@ -5,7 +5,26 @@ export default class InfoProductor extends Component {
     render() {
         return (
             <article>
-                <h2>Información Productor</h2>
+                <h2 className="tituloPerfil">Información para Productor</h2>
+                <Form 
+                claseDiv="nombreDiv"
+                claseForm="form"
+                classP="nombreProd"
+                p="Nombre" 
+                classInput="nombreInput"
+                type="text"
+                name="nombre"
+                placeholder="Introduzca sus apellidos"/> 
+                <Form 
+                claseDiv="nombreDiv"
+                claseForm="form"
+                classP="apellidoProd"
+                p="Apellidos" 
+                classInput="apellidosInput"
+                type="text"
+                name="apellido"
+                placeholder="Introduzca sus apellidos"
+                /> 
                 <Form
                 claseDiv="rzDiv"
                 claseForm="form"
@@ -54,7 +73,7 @@ export default class InfoProductor extends Component {
                 classInput="cntS"
                 type="number"
                 name="stock"
-                placeholder="Stock"
+                placeholder="Stock disponible"
                 />
             </article>
         )

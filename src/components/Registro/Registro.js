@@ -21,17 +21,22 @@ class Registro extends Component {
 
     return (
       <article>
-        <div className="Registro">
-          <h2>Crear cuenta</h2>
-          <hr/>
-          <div className="Prod">
-            <img src="/media/replant.png" alt="productor"/>
-            <Link to={"/iniciosesion/" + this.state.param2} className="btnProd">¿Vendes?</Link>
+        <div className="Welcome">
+          <div className="imgWel">
+             <img src="/media/image1.png" alt="foto" className="imgPrincipal"/> 
           </div>
-          <div className="Consum">
-            <img src="/media/organic-bag.png" alt="consumidor"/>
-            <Link to={"/iniciosesion/" + this.state.param1} className="btnConsum">¿Compras?</Link>
-          </div>
+          <div className="Registro">
+              <h2 className="welcomeMess">Regístrate en Farm Space</h2>
+              <h3 className="subWelcome">Indícanos tu perfil</h3>
+              <div className="Prod">
+                <img src="/media/replant.png" alt="productor" className="imgProd"/>
+                <Link to={"/iniciosesion/" + this.state.param2} className="btnProd">¿Vendes?</Link>
+              </div>
+              <div className="Consum">
+                <img src="/media/organic-bag.png" alt="consumidor" className="imgConsum"/>
+                <Link to={"/iniciosesion/" + this.state.param1} className="btnConsum">¿Compras?</Link>
+              </div>
+          </div> 
         </div>
       </article>
     );

@@ -24,7 +24,7 @@ class Usuario extends Component {
           <box-icon name='user'></box-icon>
         </Dropdown.Toggle>
         <Dropdown.Toggle as={CustomToggle} id="InicioSesion">
-          <Link to="/">Crear cuenta</Link>
+          <Link to="/registro">Crear cuenta</Link>
         </Dropdown.Toggle>
         <Dropdown.Toggle as={CustomToggle} id="Cuenta">
           <Link to="/micuenta">Mi cuenta</Link>

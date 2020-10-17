@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
 import UsuarioConsumer from '../../UsContext'
+import './InicioSesion.css'
 import Form from '../Form/Form';
 
 export class InicioSesion extends Component {
@@ -20,23 +21,22 @@ export class InicioSesion extends Component {
 
 mostrarProductor = () => {
   if(this.state.parametro === "Productor"){
-    return  <article className="artProductor">
-              <h1>{this.state.parametro}</h1>
+    return  <article className="articlePerfil">
+              <h2 className="tituloPerfil">Ingresa tus datos</h2>
+              <h5 className="rol">Rol como {this.state.parametro}</h5>
                 <Form 
                 claseDiv="nombreDiv"
                 claseForm="form"
-                classP="nombreProd"
-                p="Nombre" 
+                divInput="dNombreInput"
                 classInput="nombreInput"
-                type="text"
+                type="text" 
                 name="nombre"
-                placeholder="Introduzca su nombre"
+                placeholder="Nombre comercial"
                 funcion={this.cambiarEstado.bind(this)}/> 
                 <Form
                 claseDiv="emailProd"
                 claseForm="form"
-                classP="emailProd"
-                p="Email"
+                divInput="dEmailInput"
                 classInput="emailInput"
                 type="email"
                 name="email"
@@ -48,28 +48,29 @@ mostrarProductor = () => {
                 claseForm="form"
                 cassP="passProd"
                 p="Contraseña"
+                divInput="dPassInput"
                 classInput="passInput"
                 type="password"
                 name="password"
                 placeholder="Contraseña"
                 funcion={this.cambiarEstado.bind(this)}
                 />
-                <Link to="/infoproductor">
-                  <button>Añade más información a tu pefil</button>
+                <Link to="/infoproductor" className="masInfo">
+                  <p className="masInfoPerfil">Añadir más información</p>
                 </Link>
             </article> 
   }
 }
 mostrarConsumidor = () => {
     if(this.state.parametro === "Consumidor"){
-      return <article className="artConsumidor">
-              <h1>{this.state.parametro}</h1>
+      return <article className="articlePerfil">
+              <h2 className="tituloPerfil">Ingrese sus datos</h2>
+              <h4 className="rol"> Rol como {this.state.parametro}</h4>
                 <Form
                 claseDiv="nameUser"
                 claseForm="form"
-                classP="nameParrafo"
-                p="Nombre de usuario"
-                classInput="nameInput"
+                divInput="dNombreInput"
+                classInput="nombreInput"
                 type="text"
                 name="usuario"
                 placeholder="Nombre de usuario"
@@ -78,8 +79,7 @@ mostrarConsumidor = () => {
                 <Form
                 claseDiv="emailUser"
                 claseForm="form"
-                classP="emailParrafo"
-                p="Email"
+                divInput="dEmailInput"
                 classInput="emailInput"
                 type="email"
                 name="email"
@@ -89,14 +89,16 @@ mostrarConsumidor = () => {
                 <Form
                 claseDiv="passwordUser"
                 claseForm="form"
-                cassP="passParrafo"
-                p="Contraseña"
+                divInput="dPassInput"
                 classInput="passInput"
                 type="password"
                 name="password"
                 placeholder="Contraseña"
                 funcion={this.cambiarEstado.bind(this)}
                 />
+                <Link to="/infoconsumidor" className="masInfo">
+                  <p className="masInfoPerfil">Añadir más información</p>
+              </Link>
               </article>
       
     }
@@ -121,11 +123,17 @@ mostrarConsumidor = () => {
         <UsuarioConsumer>
           {(usuario) => (
             <div>
-              {this.mostrarProductor()}
-              {this.mostrarConsumidor()}
-              <div className="submitForm">
-                <button onClick={()=>this.guardarContexto(usuario.metodo)}>Crear cuenta</button>
-                {/* <input type="submit" value="Crear cuenta" onSubmit={()=>{usuario.metodo(this.guardarContexto())}}/> */}
+              <div className="divEntrada">
+                {this.mostrarProductor()}
+                {this.mostrarConsumidor()}
+
+                <div className="submitForm">
+                  <button onClick={()=>this.guardarContexto(usuario.metodo)} className="btnCrear">Crear cuenta</button>                
+                  {/* <input type="submit" value="Crear cuenta" onSubmit={()=>{usuario.metodo(this.guardarContexto())}}/> */}
+                </div>
+                <Link to="/buscador" className="irInicio">
+                  Ir al inicio
+                </Link>
               </div>
             </div>
           )}

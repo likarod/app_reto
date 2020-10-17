@@ -1,7 +1,124 @@
 /*
  * Registro css File
 */
+    .Welcome{
+        /* Welcome back*/
+        position: absolute;
+        height: 29px;
+        left: 12.8%;
+        right: 13.07%;
+        top: calc(50% - 29px/2 - 203.5px);
+    }
 
-.Registro {
-    /* propertys here */
+.imgWel{
+    /* Rectangle */    
+    position: absolute; 
+    height: 270px;
+    width: 150px;
+    border-radius: 1px;
+    left: -15%;
+    right: 0%; 
+    top: -340%;
+    bottom: 56.77%; 
+    background: rgba(0, 0, 0, 0.276636);
+    z-index: 1;
 }
+
+    .imgPrincipal{
+        position: absolute;
+        left: -11%;
+        right: 0%;
+        top: 0%;
+        top:-2%;
+        bottom: 55.64%;
+    }
+
+
+.Registro{
+    /* Div que contiene el apartado de registro*/
+    position: absolute;
+    height: 330px;
+    width: 365px;
+    left: -17.5%;
+    right: 0%; 
+    top: 200px;
+    border-radius: 16px 16px 0px 0px;
+    background: #FFFFFF; 
+    z-index: 2;
+}
+
+    .welcomeMess{
+        /* Introducción */
+        position: absolute;
+        height: 29px;
+        left: 12.8%;
+        right: 13.07%;
+        top:20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #449534;
+    }
+
+    .subWelcome{
+        /* Submensaje */
+        position: absolute;
+        height: 21px;
+        left: 21.53%;
+        right: 27.47%;
+        top: calc(50% - 1px/2 - 114.5px);
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 21px;
+
+        letter-spacing: -0.434118px;
+        color: #96969A;
+    }
+
+
+        .Prod{
+            position: absolute;
+            left: 26.53%;
+            right: 27.47%;
+            top: calc(50% - 1px/2 - 70.5px);
+            display: flex;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+            .imgProd, .imgConsum{
+                height: 50px;
+                margin-left: 2px;
+            }
+
+            a.btnProd {
+                position: relative;
+                top: 25px;
+                color: #449534;
+                margin-left: 21px;
+            }
+
+        .Consum{
+            position: absolute;
+            left: 26.53%;
+            right: 27.47%;
+            top: calc(50% - -5px);
+            display: flex;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+            a.btnConsum{
+                position: relative;
+                top: 22px;
+                color: #449534;
+                margin-left: 19px;
+            }

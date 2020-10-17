@@ -12,43 +12,41 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     {children}
   </a>
 ));
+ 
+
+
 
 
 class Nav extends Component {
   constructor(props){
     super(props);
     this.state = {
-      cantidad: 0,
     };
   }
+  
 
   render() {
     return (
       <div className="App-header">
         <div className="header_menu_drch">
-          <ul className="Lista_nav">
-            <li><Menu/></li>
-            {/* <li>
-              <Link to="/buscador" className="linkHome">
-                <box-icon name='home' ></box-icon>
-              </Link> 
-            </li> */}
-          </ul>
-        </div>
-        <div className="header_menu_izq">
-          <ul className="Lista_nav">
-            <Dropdown>
-              <div className="div_items">
-                <li>
-                  <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                    <Link to="/pedidos" className="link">
-                      <box-icon name='cart-alt' size="sm"></box-icon>
-                    </Link>
-                  </Dropdown.Toggle>
-                </li> 
-              </div>
-            </Dropdown>
-          </ul>
+            <ul className="Lista_nav">
+              <li><Menu/></li>
+            </ul>
+          </div>
+          <div className="header_menu_izq">
+            <ul className="Lista_nav">
+              <Dropdown>
+                <div className="div_items">
+                  <li>
+                    <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+                      <Link to="/pedidos" className="link">
+                        <box-icon name='cart-alt' size="sm"></box-icon>
+                      </Link>
+                    </Dropdown.Toggle>
+                  </li> 
+                </div>
+              </Dropdown>
+            </ul>
         </div>
       </div>
       

@@ -1,19 +1,12 @@
-/* .container{
+a.enlaceFoot{
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    position: fixed;
-    background-color: seagreen; */
+    justify-content: center;
+    color:#449534;
+  }
 
 
 .logosFooter{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
-
-a{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
 }

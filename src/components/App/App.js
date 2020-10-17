@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, Suspense} from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 
 import {UsuarioProvider} from '../../UsContext'
+import Welcome from '../Welcome/Welcome'
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer'
@@ -10,6 +11,9 @@ import Footer from '../Footer/Footer'
 //CSS
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Cargando from '../Cargando/Cargando';
+
+
 
 
 function App() {
@@ -21,10 +25,13 @@ function App() {
     password : "",
   }
   const [usuario, setUsuario] = useState(user)
+  
 
   return (
     <div className="App">
+      
      <UsuarioProvider value={{contexto: usuario, metodo: setUsuario}}>   
+      <Suspense fallback={<Cargando/>}> 
       <BrowserRouter>
        <header>
           <Switch>
@@ -32,16 +39,16 @@ function App() {
           </Switch>
       </header>
       <main>
-      <hr/>
           <Switch>
             <Main/>
           </Switch>
-        <footer>
+      </main>        
+      <footer>
           <Footer/>
         </footer>
-      </main>
-      </BrowserRouter>  
-    </UsuarioProvider> 
+      </BrowserRouter>
+      </Suspense>  
+    </UsuarioProvider>
     </div>
     
   );

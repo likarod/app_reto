@@ -9,6 +9,7 @@
         font-size: calc(10px + 2vmin);   
         height: 45px;
         justify-content: baseline;
+        background-color: transparent;
     }
         div.header_menu_drch{
             display: flex;

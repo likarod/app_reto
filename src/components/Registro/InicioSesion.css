@@ -1,0 +1,166 @@
+.divEntrada{
+    position: relative;
+    top: calc(50% - 29px/2 - 203.5px);
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 350px;
+    height: 450px;
+    background: #FFFFFF; 
+    box-shadow: 5px 5px 11px rgba(39, 73, 32, 0.445);
+    border-radius: 12px;
+}
+
+    .tituloPerfil{
+        /* Introducción */
+        position: absolute;
+        height: 29px;
+        left: 12.8%;
+        right: 13.07%;
+        top:20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 29px;
+        text-align: center;
+        color: #449534;
+    }
+
+    .rol{
+        /* Rol del perfil a crear */
+        position: absolute;
+        height: 21px;
+        left: 21.53%;
+        right: 27.47%;
+        top: calc(50% - 1px/2 - 160.5px);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 21px;
+        letter-spacing: -0.434118px;
+        color: #96969A;
+    }
+
+    .dNombreInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 25.2%;
+        bottom: 64.2%;
+        background: #ECEDF1;
+        border-radius: 24px;
+    }
+
+        .nombreInput{
+            position: relative;
+            width: 270px;
+            padding-top: 6px;
+            padding-left: 9px;
+            top: 7px;
+            background: none;
+            outline: none;
+            border: none;
+        }
+    
+    .dEmailInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 38.2%;
+        bottom: 51.2%;
+        background: #ECEDF1;
+        border-radius: 24px;
+    }
+
+        .emailInput{
+            position: relative;
+            width: 290px;
+            padding-top: 10px;
+            padding-left: 19px;
+            border:none;
+            outline: none;
+            background: none;
+        }
+
+    .dPassInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 51.2%;
+        bottom: 38%;
+        background: #ECEDF1;
+        border-radius: 24px;
+    }
+
+        .passInput{
+            position: relative;
+            top: 2px;
+            width: 290px;
+            padding-top: 11px;
+            padding-left: 14px;
+            background: none;
+            border:none;
+            outline: none;
+        }
+
+    .submitForm{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 65%;
+        bottom: 28.4%;
+        background: linear-gradient(270deg, #5FAF50 1.45%, #5BC746 100%);
+        box-shadow: 0px 6px 7px rgba(58, 174, 35, 0.2);
+        border-radius: 50px;
+    }
+
+        .btnCrear{
+            position: relative;
+            top:2px;
+            height: 21px;
+            width: 150px;
+            background: none;
+            outline: none;
+            border: none;
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 21px;
+        }
+
+    .masInfo{
+        position: absolute;
+        height: 21px;
+        width: 310;
+        left: 28.4%;
+        right: 26.67%;
+        top: calc(50% - 21px/2 + 126.5px);
+    }
+        .masInfoPerfil{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 19px;
+            letter-spacing: -0.434118px;
+            color: #449534;
+        }
+
+    .irInicio{
+        position: absolute;
+        height: 19px;
+        left: 39.1%;
+        right: 22.13%;
+        top: calc(50% - 19px/2 + 152px);
+        font-size: 17px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 19px;
+        letter-spacing: -0.434118px;
+        color: #449534;
+    }
