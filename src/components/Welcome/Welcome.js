@@ -14,7 +14,7 @@ export default class Welcome extends Component {
                     </div>
                 </div>
                 <div className="RegistroWelcome">
-                    <h2 className="welcomeMess">Bienvenido a Fram Space</h2>
+                    <h2 className="welcomeMess">Bienvenido a Farm Space</h2>
                     <h3 className="subWelcome">Ingresa a tu cuenta</h3>
                     <Form
                     claseDiv="emailUserReg"

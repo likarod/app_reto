@@ -23,7 +23,7 @@ class Registro extends Component {
       <article>
         <div className="Welcome">
           <div className="imgWel">
-             <img src="/media/image1.png" alt="foto" className="imgPrincipal"/> 
+             <img src="/media/registroApp.jpg" alt="foto" className="imgPrincipal"/> 
           </div>
           <div className="Registro">
               <h2 className="welcomeMess">Regístrate en Farm Space</h2>

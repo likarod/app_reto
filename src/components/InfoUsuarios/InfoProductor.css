@@ -1,0 +1,96 @@
+.fondoProductor{
+    position: absolute;
+    left: -11%;
+    right: 0%;
+    top:-10%;
+    bottom: 55.64%;
+    background-image: url('/media/fondoProductor.jpg');
+}
+
+.divInformacion{
+    position: absolute;
+    top: calc(50% - 29px/2 - 101.5px);
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+    width: 360px;
+    height: 510px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+    .dApellidoInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 38.2%;
+        bottom: 51%;
+        background: #ECEDF1;
+        border-radius: 24px;
+    }
+        .apellidoInput, .rzInput, .ncInput, .cdInput, .actv, .cantidadStock{
+            position: relative;
+            width: 270px;
+            top:10px;
+            border: none;
+            outline: none;
+            background: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 21px;
+            letter-spacing: -0.434118px;
+            color: #96969A;
+        }
+    
+    .drazonInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 51.2%;
+        bottom: 38%;
+        background: #ECEDF1; 
+        border-radius: 24px;
+    }
+
+    .dComercialInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 64.2%;
+        bottom: 25.9%;
+        background: #ECEDF1; 
+        border-radius: 24px;
+    }
+
+    .dActividadInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 76%;
+        bottom: 14.5%;
+        background: #ECEDF1;  
+        border-radius: 24px;
+    }
+
+    .dActComercialInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 88%;
+        bottom: 3%;
+        background: #ECEDF1;  
+        border-radius: 24px;
+    }
+
+    .dCantidadInput{
+        position: absolute;
+        left: 8.53%;
+        right: 8.53%;
+        top: 99%;
+        bottom: -11%;
+        background: #ECEDF1;  
+        border-radius: 24px;
+    }

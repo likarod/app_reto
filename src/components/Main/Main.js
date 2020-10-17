@@ -2,9 +2,9 @@ import React, { Component} from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import RegistreWithRouter from '../Registro/Registro'
-import InicioSesion from '../Registro/InicioSesion'
-import MiCuenta from '../Registro/MiCuenta'
-import Edit from '../Registro/Edit'
+import InicioSesion from '../InicioSesion/InicioSesion'
+import MiCuenta from '../MiCuenta/MiCuenta'
+import Edit from '../EditarPerfil/Edit'
 
 import Welcome from '../Welcome/Welcome'
 import Buscador from '../Buscador/Buscador';
@@ -18,7 +18,7 @@ import ContactConsumer from '../Contact/ContactConsumer'
 import About from '../About/About'
 
 import './Main.css';
-import InfoProductor from '../Registro/InfoProductor';
+import InfoProductor from '../InfoUsuarios/InfoProductor';
 
 
 class Main extends Component {
