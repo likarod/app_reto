@@ -1,5 +1,9 @@
 .containerBuscador{
- height: 580px;
+    height: 580px;
+    padding-top: 60%;
+    background-image: url('/media/fondoBuscador.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .divFormBusca{

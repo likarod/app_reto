@@ -1,5 +1,6 @@
 const Items = [
     {
+        id: '1',
         productor: 'Francisco Martínez Gómez',
         img: "/media/988.jpg",
         precios: '$2/K',
@@ -8,7 +9,8 @@ const Items = [
         canton: "Pedro Vicente Maldonado",
     },
 
-    {
+    {   
+        id: "2",
         productor: 'Rosalinda Echevarria',
         img: "/media/68.jpg",
         nombre: 'Maiz',
@@ -18,6 +20,7 @@ const Items = [
 
     },
     {
+        id: "3",
         productor: 'Mauricio de Jesús',
         img: '/media/13542.jpg',
         nombre: 'Guisantes',
@@ -26,6 +29,7 @@ const Items = [
         canton: 'Pedro Moncayo',    
     },
     {
+        id: "4",
         productor: 'Marcela Gonzalez',
         img: '/media/68.jpg',
         nombre: 'Maíz ecológico',

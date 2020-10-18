@@ -1,5 +1,5 @@
 import React from 'react';
-import { firebaseAuth } from '../reducers/authReducer';
+import { firebaseAuth } from '../components/reducers/authReducer';
 //firebaseauth reducer
 
 

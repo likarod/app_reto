@@ -7,6 +7,7 @@ export class Articulos extends Component {
     constructor(props){
         super(props);
         this.state = {
+            id:  this.props.datos.id,
             productor: this.props.datos.productor,
             img: this.props.datos.img,
             nombre: this.props.datos.nombre,
@@ -19,13 +20,14 @@ export class Articulos extends Component {
     render() {
         return (
             <article>
+                {console.log(this.props.datos.id)}
                 <div className="body_articulo">
                     <div className="container_art">
                         <div className="nombreProductor">
                             <p className="productor">{this.state.productor}</p>
                         </div>
                         <div className="imagenes">
-                            <img src={this.state.img} class="imgProductos" alt="productos"/>
+                            <img src={this.state.img} className="imgProductos" alt="productos"/>
                         </div>  
                         <hr/>
                         <div className="productos">
@@ -45,7 +47,7 @@ export class Articulos extends Component {
                         <div className="btnProductos">
                             <Link to="/pedidos">
                                 <img src="/media/ShoppingBag.svg" alt="shopping cart"/>	
-                                <button class="agregar">
+                                <button className="agregar">
                                     AÑADIR	
                                 </button>
                             </Link> 

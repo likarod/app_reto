@@ -29,7 +29,7 @@ export default class Compra extends Component {
                             </button>
                         </div>
                         <div className="carritoImg">
-                            <img className="imgProductoCarrito" src="/media/avocado.png" alt="producto"/>
+                            <img className="imgProductoCarrito" src="/media/68.jpg" alt="producto"/>
                         </div>
                     </div>
                     <div className="bodyCompra">  

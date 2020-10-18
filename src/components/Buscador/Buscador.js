@@ -34,7 +34,7 @@ class Buscador extends Component {
                 <label for="busquedaArticulos" className="etq_busca_articulo">
                   <div className="caja_buscador">
                     <div>
-                    <input className="input_buscador" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocorrect="off" spellcheck="false" id="bigsearch" name="buscador" placeholder="Busca tus productos" required="" onChange={this.cambiarEstado} ></input>
+                    <input className="input_buscador" aria-autocomplete="list" autocomplete="off" autocorrect="off" spellcheck="false" id="bigsearch" name="buscador" placeholder="Busca tus productos" required="" onChange={this.cambiarEstado} ></input>
                     </div> 
                     <div className="btn_buscador">
                       <Link to={"/articulos/" + this.state.input}>
