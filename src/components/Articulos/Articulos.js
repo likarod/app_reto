@@ -13,6 +13,7 @@ export class Articulos extends Component {
             precios: this.props.datos.precios,
             direccion: this.props.datos.direccion,
             canton: this.props.datos.canton, 
+            // parametro:this.props.match.params.value,
         }
     }
     render() {
@@ -28,25 +29,27 @@ export class Articulos extends Component {
                         </div>  
                         <hr/>
                         <div className="productos">
-                            <h2 className="nombre">{this.state.nombre}</h2>
                             <h3 className="precios">{this.state.precios}</h3>
-                            <Link to="/ubicacion">
-                                <p className="direccion">
+                            <h2 className="nombre">{this.state.nombre}</h2>
+                            <div className="direccion">
+                                <Link to="/ubicacion">
                                     <box-icon name='map' size="xs"></box-icon> 
-                                    {this.state.direccion}
-                                </p>
-                            </Link>
-                            <p className="canton">   
-                                {this.state.canton}
-                            </p>
+                                    <p className="canton">
+                                        {this.state.canton}
+                                    </p>
+                                </Link>
+                            </div>  
+                        </div>
+                        <div className="separacion">
                         </div>
                         <div className="btnProductos">
                             <Link to="/pedidos">
-                                <button class="agregar">	
+                                <img src="/media/ShoppingBag.svg" alt="shopping cart"/>	
+                                <button class="agregar">
                                     AÑADIR	
                                 </button>
                             </Link> 
-                        </div>    
+                        </div>  
                     </div> 
                 </div>
                 

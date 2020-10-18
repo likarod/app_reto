@@ -30,7 +30,7 @@ mostrarProductor = () => {
                 divInput="dNombreInput"
                 classInput="nombreInput"
                 type="text" 
-                name="nombre"
+                name="usuario"
                 placeholder="Nombre comercial"
                 funcion={this.cambiarEstado.bind(this)}/> 
                 <Form

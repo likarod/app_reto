@@ -2,7 +2,6 @@ import React, {useState, Suspense} from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 
 import {UsuarioProvider} from '../../UsContext'
-import Welcome from '../Welcome/Welcome'
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer'

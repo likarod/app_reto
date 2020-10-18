@@ -1,55 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 .body_articulo{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background: rgb(252, 252, 252);
     font-family: 'Lato', sans-serif,sans-serif;
     text-transform: uppercase;
 }
 
 .container_art{
-    position: relative;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    width: 273px;
-    height: 370px;
-    background: #fafafa;
+    position: absolute;
+    width: 164px;
+    height: 255px;
+    left: 16px;
+    top: 55px;
+    background: #FFFFFF;
+    border-radius: 2.63441px;
     box-shadow: 5px 5px 15px rgba(82, 87, 83, 0.5);
-    border-radius: 22px;
 }
 
 .nombreProductor{
     margin-top: 10px;
 }
     .imgProductos{
-        /* width: 290px; */
-        height: 120px;
+        position: absolute;
+        width: 111.7px;
+        height: 111.7px;
+        left: 18.92px;
+        top: 46.12px;
     }
         .productor{
             font-size: 0.8em;
             color:  #4d3306;
             letter-spacing: 1px;
-        }
-
-        .nombre{
-            font-size: 1.4em;
-            color: #c47e07;
-            margin-top: -5px;
-        }
+        }  
 
         .precios{ 
-            font-size: 1.2em;
-            color: #c08c33;
+            position: absolute;
+            width: 40.57px;
+            height: 10.54px;
+            left: 61.33px;
+            top: 168px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 11px;
+            color: #449534;
+        }
+        
+        .nombre{
+            position: absolute;
+            width: 179px;
+            height: 16px;
+            left: -5px;
+            top: 180.43px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #373738;
         }
 
         .direccion {
-            letter-spacing: 0;
-            margin-bottom: 0;
-            color: #4e4e4e;
-            font-size: 1em;
-            line-height: 1em;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            width: 52px;
+            height: 16px;
+            left: 33px;
+            top: 193px;
         }
         
         box-icon{
@@ -57,21 +79,45 @@
         }
           
         .canton{
-            font-size: 1em;
-            letter-spacing: 0;
-            color: #4e4e4e;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #626262;
+        }
+
+        .separacion{
+            position: absolute;
+            width: 162px;
+            height: 1.03px;
+            left: 1px;
+            top: 219px;
+            border: 0.514286px solid #DEDDDD;
+        }
+
+        .btnProductos{
+            position: absolute;
+            width: 65.83px;
+            height: 15.43px;
+            left: 38.74px;
+            top: 226.31px;
         }
 
         button.agregar{
             background: none;
-            padding: 7px; 
             outline: none;
-            border: 0;
-            margin: 0.2px;
+            padding: 7px; 
+            border: none;
+            margin: 0.2px;            
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13.3714px;
+            line-height: 15px;
+            color: #449534;
             letter-spacing: 1px;
-            color: #108805;
             cursor: pointer;
-            font-size: 0.8em;
         }
 
         button.agregar:hover {
