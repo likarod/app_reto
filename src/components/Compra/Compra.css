@@ -1,5 +1,5 @@
 .containerCompra{
-  background: #F2F2F2; 
+  background: #f3f2f2;  
   height: 580px;
 }
 
@@ -18,21 +18,34 @@
     right: 25%;
     top: 2.05%;
     bottom: 22.05%;
-    }
-
-  .meGusta{
+  }
+  
+  button.btnMeGusta{
     position: absolute;
     left: 86.5%;
     right: 8.45%;
     top: 1.65%;
-    bottom: 12.37%;
+    height: 28px;
+    width: 29px;
+    border: none;
+    background:none;
+    outline: none;
+    border-radius: 80px;
+  }
+
+  .meGusta{
+    position: absolute;
+    left: 2%;
+    right: 0%;
+    top: 5%;
+    bottom: 12%;
   }
 
   .carritoImg{
     position: absolute;
-    width: 376px;
+    width: 360px;
     height: 402px;
-    left: 6px;
+    left: 1px;
     top: 45px;
   }
 
@@ -88,23 +101,37 @@
     display: flex;
     position: absolute;
     width: 360px;
-    height: 131px;
-    bottom: 0px;
-    /* background: #F3F0EC; */
-    background-color: saddlebrown;
+    height: 61px;
+    bottom: 88px;
+    background: #e7e4df; 
     mix-blend-mode: normal;
     opacity: 0.6;
   }
 
 
     .cantidad_input{
-      margin: 0;
-      width: 4em;
+      position: absolute;
+      width: 25px;
+      height: 20px;
+      left: 80px;
+      top: 16px;  
     }
 
-    .cantidad_compra {
-      width: 70%;
-    }
+      .cantidad_compra {
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        width: 70%;
+        background: none;
+        border: none;
+        outline: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 20px;
+        color: #5FB150;
+      }
 
     .mas, .menos{
       background-color: none;
@@ -112,11 +139,49 @@
       outline: none;
     }
 
+    .btnMenos{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 30px;
+      top: 9px;
+      box-sizing: border-box;
+    }
+
+    .btnMas{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 110px;
+      top: 9px;
+      box-sizing: border-box;
+    }
   .compra_final{
     position: absolute;
     width: 172px;
     height: 44.5px;
-    left: 150.5px;
-    /* top: 602.5px; */
-
+    left: 175.5px;
+    top: 8px;
+    background: linear-gradient(270deg, #5FAF50 1.45%, #5BC746 100%);
+    box-shadow: 0px 6px 7px rgba(58, 174, 35, 0.2);
+    border-radius: 50px;
   }
+
+    .btnAddToCart{
+      position: absolute;
+      width: 84px;
+      height: 20px;
+      left: 23px;
+      top: 10.5px;
+      border: none;
+      height: 40px;
+      width: 130px;
+      background: none;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+    }

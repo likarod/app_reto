@@ -12,7 +12,7 @@
 footer{
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 360px;
   height:90px;
   background-color:#F2F2F2;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './Compra.css'
 
 export default class Compra extends Component {
@@ -20,8 +21,12 @@ export default class Compra extends Component {
                 <div className="containerCompra">
                     <div className="headCompra">
                         <div className="logosHead">
-                            <img src="/media/flecha.svg" alt="Flecha izquierda" className="flecha"/>
-                            <img src="/media/love.svg" alt="Me gusta" className="meGusta"/>
+                            <Link to ="/articulos/Maiz">
+                                <img src="/media/flecha.svg" alt="Flecha izquierda" className="flecha"/>
+                            </Link> 
+                            <button className="btnMeGusta">
+                                <img src="/media/love.svg" alt="Me gusta" className="meGusta"/>
+                            </button>
                         </div>
                         <div className="carritoImg">
                             <img className="imgProductoCarrito" src="/media/avocado.png" alt="producto"/>
@@ -30,7 +35,7 @@ export default class Compra extends Component {
                     <div className="bodyCompra">  
                         <div className="compra_info">
                             <div className="compra_info_precio">
-                                <span className="precio">$2/</span>
+                                <span className="precio">$2 /</span>
                                 <span className="cantidad">kilo</span>
                             </div>
                             <div className="compra_info_nombre">
@@ -41,7 +46,7 @@ export default class Compra extends Component {
                         </div>
                         <div className="linea_accion_compra">
                             <button className="menos"> 
-                                <img src="/media/Group2.svg" alt="Boton menos"/> 
+                                <img src="/media/Group2.svg" alt="Boton menos"className="btnMenos"/> 
                             </button>
                             
                             <div className="cantidad_input">
@@ -49,13 +54,13 @@ export default class Compra extends Component {
                             </div>
 
                             <button onClick={this.aumentarCantidad} className="mas" >
-                                <img src="/media/Group.svg" alt="Boton más"/>
+                                <img src="/media/Group.svg" alt="Boton más" className="btnMas"/>
                             </button>
-                            
+
                             <div className="compra_final"> 
-                                <button className="bntAddToCart">
-                                    Añadir al carrito
-                                </button>
+                                <Link to="/comprafinal" className="btnAddToCart">
+                                    Añadir producto
+                                </Link>
                             </div> 
                         </div>
                     </div>  

@@ -27,6 +27,7 @@ class Buscador extends Component {
   render() {
     return (
       <article>
+        <div className="containerBuscador">
           <div className="divFormBusca">
             <form className="formulario_busqueda">
               <div className="buscador_principal">
@@ -47,8 +48,9 @@ class Buscador extends Component {
             </form>  
           </div> 
           <div className="divRecomendacion">
-          {/* {this.state.recomendacion.map(productos => <Articulo datos={productos}/>)} */}
+            {/* {this.state.recomendacion.map(productos => <Articulo datos={productos}/>)} */}
           </div>
+        </div>
       </article>
      
     
