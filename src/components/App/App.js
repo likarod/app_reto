@@ -28,7 +28,18 @@ function App() {
   }
   const [usuario, setUsuario] = useState(user);
   
-  const [compra, setCompra ] = useState([]);
+  const [compra, setCompra ] = useState([
+    {   
+      id: "2",
+      productor: 'Rosalinda Echevarria',
+      img: "/media/68.jpg",
+      nombre: 'Maiz',
+      precios: '1.1',
+      direccion: 'C// MEDARDO SILVA', 
+      canton: "Quito",
+      cantidad: 1       
+  }
+  ]);
 
   const [ articulo, setArticulo] = useState("");
 

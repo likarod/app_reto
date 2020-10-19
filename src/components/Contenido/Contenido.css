@@ -1,5 +1,7 @@
 .seccion{
     display: flex;
     flex-direction: row;
-    align-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;  
+    /* align-content: space-around; */
 }

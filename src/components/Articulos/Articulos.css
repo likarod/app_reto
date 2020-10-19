@@ -2,18 +2,17 @@
 
 .body_articulo{
     display: flex;
-    flex-direction: column;
+    width: 50vw;
+    flex-direction: row;
+    flex-wrap: wrap;
     background: rgb(252, 252, 252);
     font-family: 'Lato', sans-serif,sans-serif;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .container_art{
-    position: absolute;
-    width: 164px;
-    height: 255px;
-    left: 16px;
-    top: 55px;
+    width: 48vw;
     background: #FFFFFF;
     border-radius: 2.63441px;
     box-shadow: 5px 5px 15px rgba(82, 87, 83, 0.5);
@@ -23,25 +22,18 @@
     margin-top: 10px;
 }
     .imgProductos{
-        position: absolute;
         width: 111.7px;
         height: 111.7px;
-        left: 18.92px;
-        top: 46.12px;
     }
         .productor{
-            font-size: 0.8em;
+            font-size: 0.7em;
             color:  #4d3306;
             letter-spacing: 1px;
         }  
 
         .precios{ 
-            position: absolute;
-            width: 40.57px;
+            /* width: 40.57px; */
             height: 10.54px;
-            left: 61.33px;
-            top: 168px;
-
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
@@ -51,11 +43,8 @@
         }
         
         .nombre{
-            position: absolute;
             width: 179px;
             height: 16px;
-            left: -5px;
-            top: 180.43px;
             font-family: Roboto;
             font-style: normal;
             font-weight: 500;
@@ -67,16 +56,16 @@
         .direccion {
             display: flex;
             flex-direction: row;
-            position: absolute;
-            width: 52px;
+            /* position: absolute; */
+            /*width: 52px;
             height: 16px;
-            left: 33px;
-            top: 193px;
+             left: 33px;
+            top: 193px; */
         }
         
-        box-icon{
+        /* box-icon{
             margin-right: 2px;
-        }
+        } */
           
         .canton{
             font-family: Roboto;
@@ -86,7 +75,7 @@
             line-height: 16px;
             color: #626262;
         }
-
+/* 
         .separacion{
             position: absolute;
             width: 162px;
@@ -94,10 +83,10 @@
             left: 1px;
             top: 219px;
             border: 0.514286px solid #DEDDDD;
-        }
+        } */
 
         .btnProductos{
-            position: absolute;
+            /* position: absolute; */
             width: 65.83px;
             height: 15.43px;
             left: 38.74px;

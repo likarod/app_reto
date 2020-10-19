@@ -3,34 +3,44 @@ import  {CompraConsumer} from '../../compraContext';
 
 import './CompraFinal.css'
 
+
 function CompraFinal () {
+
     return (
         <CompraConsumer>
             {(comprafinal)=> (
                 <div>
                     {console.log(comprafinal.contexto)}
                     <div className="mensajeCompra">
-                        <table id="lista-carrito" class="u-full-width">
-                            <thead>
-                                <tr>
-                                    <th>Imagen</th>
-                                    <th>Nombre</th>
-                                    <th>Precio</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <tr>{comprafinal.contexto.img}</tr>
-                                    <tr>{comprafinal.contexto.nombre}</tr>
-                                    <tr>{comprafinal.contexto.precios}</tr>
-                                    <tr>{comprafinal.contexto.cantidad}</tr>
-                                </tr>
-                            </tbody>
-                            
-                        </table>
+                            {comprafinal.contexto.map((obj)=>
+                                <div>
+                                    <div className="infoCompraFinal">
+                                        <div>
+                                            <img src={obj.img} alt={obj.img} className="imgCompraFinal"/>
+                                        </div>
+                                        <h4 className="tituloCompraFinal">
+                                            {obj.nombre}
+                                        </h4>
+                                        <div className="dPrecioCompraFinal">
+                                            <h5>PRECIO</h5>
+                                            <p>$ {obj.precios}</p>
+                                        </div>  
+                                    </div>
+                                    
+                                    <div className="subtotalCompraFinal">
+                                        <h3>SUBTOTAL</h3>
+                                        <p>$ {parseInt(obj.cantidad) + parseFloat(obj.precios)}</p>
+                                    </div>
+
+                                </div>
+
+                            )}
+
                         <button className="vaciar">
                             Vaciar Carrito
+                        </button>
+                        <button>
+                            Ir a inicio
                         </button>
                     </div>
                 </div>

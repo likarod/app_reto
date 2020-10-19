@@ -3,7 +3,7 @@ const Items = [
         id: '1',
         productor: 'Francisco Martínez Gómez',
         img: "/media/988.jpg",
-        precios: '$2/K',
+        precios: '2',
         nombre: 'Papas ecológicas',
         direccion: "VIA SAN DIMAS",
         canton: "Pedro Vicente Maldonado",
@@ -14,7 +14,7 @@ const Items = [
         productor: 'Rosalinda Echevarria',
         img: "/media/68.jpg",
         nombre: 'Maiz',
-        precios: '$1.1',
+        precios: '1.1',
         direccion: 'C// MEDARDO SILVA', 
         canton: "Quito",       
 
@@ -24,7 +24,7 @@ const Items = [
         productor: 'Mauricio de Jesús',
         img: '/media/13542.jpg',
         nombre: 'Guisantes',
-        precios: '$0,74',
+        precios: '0,74',
         direccion: 'C// QUITO',
         canton: 'Pedro Moncayo',    
     },
@@ -33,7 +33,7 @@ const Items = [
         productor: 'Marcela Gonzalez',
         img: '/media/68.jpg',
         nombre: 'Maíz ecológico',
-        precios: '$1,10',
+        precios: '1,10',
         direccion: 'C// GANGOTENA',
         canton: 'Rumiñahui'
     }

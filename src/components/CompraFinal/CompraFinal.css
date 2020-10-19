@@ -8,8 +8,18 @@
     min-width: 300px;
 }
 
-.u-full-width{
-    width: 100%;
-    box-sizing: border-box;
+
+.infoCompraFinal{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
-    
+   .tituloCompraFinal{
+        display: flex;
+        margin-right: 35px;
+        align-content: center;
+   } 
+
+.imgCompraFinal{
+    max-width: 150px;
+}

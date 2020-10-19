@@ -6,17 +6,7 @@ import Menu from '../Menu/Menu'
 import './Nav.css';
 
 
-
-const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
-  <a href="/" ref={ref} onClick={(e) => {e.preventDefault(); onClick(e);}}>
-    {children}
-  </a>
-));
  
-
-
-
-
 class Nav extends Component {
   constructor(props){
     super(props);
@@ -38,11 +28,9 @@ class Nav extends Component {
               <Dropdown>
                 <div className="div_items">
                   <li>
-                    <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                      <Link to="/resumen" className="link">
-                        <box-icon name='cart-alt' size="sm"></box-icon>
-                      </Link>
-                    </Dropdown.Toggle>
+                    <Link to="/resumen" className="link">
+                      <box-icon name='cart-alt' size="sm"></box-icon>
+                    </Link>
                   </li> 
                 </div>
               </Dropdown>

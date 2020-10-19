@@ -28,7 +28,7 @@ export class Articulos extends Component {
             <ArticuloConsumer>
             {(articulos)=> (
              <article>
-                {/* {console.log(this.props.datos.id)} */}
+                {console.log(this.props.datos.id)}
                 <div className="body_articulo">
                     <div className="container_art">
                         <div className="nombreProductor">
@@ -39,7 +39,7 @@ export class Articulos extends Component {
                         </div>  
                         <hr/>
                         <div className="productos">
-                            <h3 className="precios">{this.state.precios}</h3>
+                            <h3 className="precios">${this.state.precios}</h3>
                             <h2 className="nombre">{this.state.nombre}</h2>
                             <div className="direccion">
                                 <Link to="/ubicacion">

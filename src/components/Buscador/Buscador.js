@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
-import Recomendacion from '../Recomendacion/Recomendacion'
+// import Recomendacion from '../Recomendacion/Recomendacion'
 // import Articulo from '../Articulos/Articulos'
 
 import './Buscador.css';
@@ -20,9 +20,9 @@ class Buscador extends Component {
     this.setState({input: e.target.value})
   }
 
-  componentDidMount(){
-    this.setState({recomendacion: Recomendacion})
-  }
+  // componentDidMount(){
+  //   this.setState({recomendacion: Recomendacion})
+  // }
 
   render() {
     return (
@@ -31,10 +31,10 @@ class Buscador extends Component {
           <div className="divFormBusca">
             <form className="formulario_busqueda">
               <div className="buscador_principal">
-                <label for="busquedaArticulos" className="etq_busca_articulo">
+                <label htmlFor="busquedaArticulos" className="etq_busca_articulo">
                   <div className="caja_buscador">
                     <div>
-                    <input className="input_buscador" aria-autocomplete="list" autocomplete="off" autocorrect="off" spellcheck="false" id="bigsearch" name="buscador" placeholder="Busca tus productos" required="" onChange={this.cambiarEstado} ></input>
+                    <input className="input_buscador" aria-autocomplete="list" autoComplete="off" autoCorrect="off" spellCheck="false" id="bigsearch" name="buscador" placeholder="Busca tus productos" required="" onChange={this.cambiarEstado}></input>
                     </div> 
                     <div className="btn_buscador">
                       <Link to={"/articulos/" + this.state.input}>

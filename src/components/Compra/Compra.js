@@ -20,7 +20,6 @@ export default class Compra extends Component {
                 <ArticuloConsumer> 
                     {(articulo)=> (
                         <article>
-                        {console.log(articulo)}
                         <div className="containerCompra">
                             <div className="headCompra">
                                 <div className="logosHead">
@@ -50,7 +49,7 @@ export default class Compra extends Component {
                                     
                                 </div>
                                 <div className="linea_accion_compra">
-                                    <button className="menos"> 
+                                    <button className="menos"  onClick={()=> articulo.metodo({...articulo.contexto, cantidad: articulo.contexto.cantidad-1})}> 
                                         <img src="/media/Group2.svg" alt="Boton menos"className="btnMenos"/> 
                                     </button>
                                     
