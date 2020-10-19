@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-
-import {UsuarioConsumer} from '../../UsContext'
-import './InicioSesion.css'
 import Form from '../Form/Form';
+import {UsuarioConsumer} from '../../authContext'
+import './InicioSesion.css'
+
 
 export class InicioSesion extends Component {
   constructor(props){
@@ -128,7 +128,8 @@ mostrarConsumidor = () => {
                 {this.mostrarConsumidor()}
 
                 <div className="submitForm">
-                  <button onClick={()=>this.guardarContexto(usuario.metodo)} className="btnCrear">Crear cuenta</button>                
+                  <Link to="/buscador">
+                  <button onClick={()=>this.guardarContexto(usuario.metodo)} className="btnCrear">Crear cuenta</button></Link>                
                   {/* <input type="submit" value="Crear cuenta" onSubmit={()=>{usuario.metodo(this.guardarContexto())}}/> */}
                 </div>
                 <Link to="/buscador" className="irInicio">

@@ -9,14 +9,13 @@ export class Articulos extends Component {
         super(props);
         this.state = {
             id:  this.props.datos.id,
-            productor: this.props.datos.productor,
+            nombreComercial: this.props.datos.productor,
             img: this.props.datos.img,
             nombre: this.props.datos.nombre,
             precios: this.props.datos.precios,
             direccion: this.props.datos.direccion,
             canton: this.props.datos.canton, 
             cantidad: 1,
-            // parametro:this.props.match.params.value,
         }
     }
 
@@ -26,11 +25,10 @@ export class Articulos extends Component {
             <ArticuloConsumer>
             {(articulos)=> (
              <article>
-                {console.log(this.props.datos.nombre)}
                 <div className="body_articulo">
                     <div className="container_art">
                         <div className="nombreProductor">
-                            <p className="productor">{this.state.productor}</p>
+                            <p className="productor">{this.state.nombreComercial}</p>
                         </div>
                         <div className="imagenes">
                             <img src={this.state.img} className="imgProductos" alt="productos"/>

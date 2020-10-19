@@ -1,7 +1,7 @@
 const Items = [
     {
         id: '1',
-        productor: 'Francisco Martínez Gómez',
+        productor: 'Finca Paraíso',
         img: "/media/988.jpg",
         precios: '2',
         nombre: 'Papas ecológicas',
@@ -11,7 +11,7 @@ const Items = [
 
     {   
         id: "2",
-        productor: 'Rosalinda Echevarria',
+        productor: 'Finca Hermanos Sarmiento',
         img: "/media/68.jpg",
         nombre: 'Maiz',
         precios: '1.1',
@@ -21,7 +21,7 @@ const Items = [
     },
     {
         id: "3",
-        productor: 'Mauricio de Jesús',
+        productor: 'Finca Germán',
         img: '/media/13542.jpg',
         nombre: 'Guisantes',
         precios: '0,74',
@@ -30,7 +30,7 @@ const Items = [
     },
     {
         id: "4",
-        productor: 'Marcela Gonzalez',
+        productor: 'Finca Maravillas',
         img: '/media/68.jpg',
         nombre: 'Maíz ecológico',
         precios: '1,10',

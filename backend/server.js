@@ -4,10 +4,13 @@ const app = express();
 
 // app.use(express.static('client'));
 
+/* Rutas del GET*/ 
 app.get('/buscarProductos');
-app.get('/mostrarProductro');
 app.get('/mostarDireccion');
-app.post('/guardarUsuario');
+
+/* Rutas del POST */ 
+app.post('/guadarProductor');
+app.post('/guardarConsumidor');
 app.post('/guardarProducto');
 
 

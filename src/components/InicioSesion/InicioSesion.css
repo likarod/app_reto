@@ -119,6 +119,7 @@
 
         .btnCrear{
             position: relative;
+            left: 70px;
             top:2px;
             height: 21px;
             width: 150px;

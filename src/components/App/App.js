@@ -1,7 +1,7 @@
 import React, {useState, Suspense} from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 
-import {UsuarioProvider} from '../../UsContext'
+import {UsuarioProvider} from '../../authContext'
 import {CompraProvider} from '../../compraContext'
 import {ArticuloProvider} from '../../articuloContext';
 
@@ -14,7 +14,6 @@ import Footer from '../Footer/Footer'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cargando from '../Cargando/Cargando';
-
 
 
 
