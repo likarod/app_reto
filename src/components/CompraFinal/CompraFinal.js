@@ -1,5 +1,5 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom'
+// import {Redirect} from 'react-router-dom'
 import  {CompraConsumer} from '../../compraContext';
 
 import './CompraFinal.css'
@@ -39,11 +39,9 @@ function CompraFinal () {
                                 </div>
 
                             )}
-                        <Redirect>
                             <button>
                                 Ir a inicio
                             </button>
-                        </Redirect>
                     </div>
                 </div>
             )}

@@ -15,7 +15,7 @@ export default class Contenido extends Component {
     }
 
     componentDidMount(){
-        // fetch('/getProductos')
+        fetch('/getProductos')
         this.setState({productos:Items})
     }
     

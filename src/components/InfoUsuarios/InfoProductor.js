@@ -11,14 +11,14 @@ export default class InfoProductor extends Component {
                 <div className="divInformacion">
                     <h2 className="tituloPerfil">Complete su informacion</h2>
                     <h3 className="rol">Rellene los campos</h3>
-                    <Form 
+                    {/* <Form 
                     claseDiv="nombreDiv"
                     claseForm="form"
                     divInput="dNombreInput"
                     classInput="nombreInput"
                     type="text"
                     name="nombre"
-                    placeholder="Introduzca su nombre"/> 
+                    placeholder="Introduzca su nombre"/>  */}
                     <Form 
                     claseDiv="nombreDiv"
                     claseForm="form"
@@ -56,22 +56,22 @@ export default class InfoProductor extends Component {
                     placeholder="Introduzca su código CIIU"
                     />
                     <Form
-                    claseDiv="actComercial"
-                    claseForm="form"
-                    divInput="dActComercialInput"
-                    classInput="actv"
-                    type="text"
-                    name="actividad comercial"
-                    placeholder="Introduzca su actividad comercial"
-                    />
-                     <Form
                     claseDiv="cntStock"
                     claseForm="form"
                     divInput="dCantidadInput"
                     classInput="cantidadStock"
                     type="number"
-                    name="stock"
+                    name="Stock"
                     placeholder="Stock disponible"
+                    />
+                     <Form
+                    claseDiv="precioProd"
+                    claseForm="form"
+                    divInput="dPrecioInput"
+                    classInput="precioProducto"
+                    type="number"
+                    name="precioProducto"
+                    placeholder="Introduzca el precio de su producto"
                     /> 
                 </div>
             </article>
