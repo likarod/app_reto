@@ -2,6 +2,9 @@ import React, {useState, Suspense} from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 
 import {UsuarioProvider} from '../../UsContext'
+import {CompraProvider} from '../../compraContext'
+import {ArticuloProvider} from '../../articuloContext';
+
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer'
@@ -23,13 +26,17 @@ function App() {
     email : "",
     password : "",
   }
-  const [usuario, setUsuario] = useState(user)
+  const [usuario, setUsuario] = useState(user);
   
+  const [compra, setCompra ] = useState([]);
+
+  const [ articulo, setArticulo] = useState("");
 
   return (
-    <div className="App">
-      
-     <UsuarioProvider value={{contexto: usuario, metodo: setUsuario}}>   
+    <div className="App">    
+    <CompraProvider value={{contexto: compra, metodo: setCompra}}>
+    <ArticuloProvider value={{contexto: articulo, metodo: setArticulo}}>
+    <UsuarioProvider value={{contexto: usuario, metodo: setUsuario}}>   
       <Suspense fallback={<Cargando/>}> 
       <BrowserRouter>
        <header>
@@ -48,6 +55,8 @@ function App() {
       </BrowserRouter>
       </Suspense>  
     </UsuarioProvider>
+    </ArticuloProvider>
+    </CompraProvider>
     </div>
     
   );

@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import RegistreWithRouter from '../Registro/Registro'
 import InicioSesion from '../InicioSesion/InicioSesion'
+import InfoProductor from '../InfoUsuarios/InfoProductor';
 import MiCuenta from '../MiCuenta/MiCuenta'
 import Edit from '../EditarPerfil/Edit'
 
@@ -18,7 +19,7 @@ import ContactConsumer from '../Contact/ContactConsumer'
 import About from '../About/About'
 
 import './Main.css';
-import InfoProductor from '../InfoUsuarios/InfoProductor';
+
 
 
 class Main extends Component {
@@ -49,12 +50,12 @@ class Main extends Component {
 
             <Route exact path="/buscador" component={Buscador}/>
             <Route exact path="/articulos/:producto" component={Contenidos}/>
+            <Route exact path="/resumen" component={CompraFinal}/>  
             <Route exact path="/pedidos" component={Compra}/>   
-            <Route exact path="/comprafinal" component={CompraFinal}/>  
-             
+            
             <Route exact path="/contacto" component={Contact}/>
-            <Route exact path="clienteprod" component={ContactProducter}/>
-            <Route exact path="clientecons" component={ContactConsumer}/>
+            <Route exact path="/clienteprod" component={ContactProducter}/>
+            <Route exact path="/clientecons" component={ContactConsumer}/>
             <Route excat path="/about" component={About}/>
           </Switch>
       </section>

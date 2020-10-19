@@ -39,7 +39,7 @@ class Nav extends Component {
                 <div className="div_items">
                   <li>
                     <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                      <Link to="/pedidos" className="link">
+                      <Link to="/resumen" className="link">
                         <box-icon name='cart-alt' size="sm"></box-icon>
                       </Link>
                     </Dropdown.Toggle>

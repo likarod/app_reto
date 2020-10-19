@@ -23,7 +23,7 @@ class Carrito extends Component {
       <Dropdown>
       <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
       <box-icon name='cart-alt' size="sm"></box-icon>
-          <Link to="/pedidos">Pedidos</Link>
+          <Link to="/resumen">Pedidos</Link>
       </Dropdown.Toggle>
     </Dropdown>
       </div>

@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 
 const ContextClass = React.createContext();
 const CompraProvider = ContextClass.Provider;

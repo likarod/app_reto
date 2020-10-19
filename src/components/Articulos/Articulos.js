@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import {ArticuloConsumer} from '../../articuloContext'
 
 import './Articulos.css'
 
@@ -14,13 +15,20 @@ export class Articulos extends Component {
             precios: this.props.datos.precios,
             direccion: this.props.datos.direccion,
             canton: this.props.datos.canton, 
+            cantidad: 1,
             // parametro:this.props.match.params.value,
         }
     }
+
+
+
+
     render() {
         return (
-            <article>
-                {console.log(this.props.datos.id)}
+            <ArticuloConsumer>
+            {(articulos)=> (
+             <article>
+                {/* {console.log(this.props.datos.id)} */}
                 <div className="body_articulo">
                     <div className="container_art">
                         <div className="nombreProductor">
@@ -47,15 +55,15 @@ export class Articulos extends Component {
                         <div className="btnProductos">
                             <Link to="/pedidos">
                                 <img src="/media/ShoppingBag.svg" alt="shopping cart"/>	
-                                <button className="agregar">
+                                <button className="agregar" onClick={()=> articulos.metodo(this.state)}>
                                     AÑADIR	
                                 </button>
                             </Link> 
                         </div>  
                     </div> 
                 </div>
-                
-            </article>
+            </article>)}
+            </ArticuloConsumer>    
         )
     }
 }

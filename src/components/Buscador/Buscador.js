@@ -52,8 +52,6 @@ class Buscador extends Component {
           </div>
         </div>
       </article>
-     
-    
     );
   }
 }
