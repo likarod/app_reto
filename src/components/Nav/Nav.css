@@ -19,6 +19,7 @@
         div.header_menu_izq{
             display: flex;
             justify-content: flex-end;
+            margin-right: 10px
            
         }
             .div_items, .dropdown{

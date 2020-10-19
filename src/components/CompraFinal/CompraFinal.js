@@ -1,4 +1,5 @@
 import React from 'react';
+import {Redirect} from 'react-router-dom'
 import  {CompraConsumer} from '../../compraContext';
 
 import './CompraFinal.css'
@@ -31,17 +32,18 @@ function CompraFinal () {
                                         <h3>SUBTOTAL</h3>
                                         <p>$ {parseInt(obj.cantidad) + parseFloat(obj.precios)}</p>
                                     </div>
+                                    <button className="vaciar">
+                                        Vaciar Carrito
+                                    </button>
 
                                 </div>
 
                             )}
-
-                        <button className="vaciar">
-                            Vaciar Carrito
-                        </button>
-                        <button>
-                            Ir a inicio
-                        </button>
+                        <Redirect>
+                            <button>
+                                Ir a inicio
+                            </button>
+                        </Redirect>
                     </div>
                 </div>
             )}

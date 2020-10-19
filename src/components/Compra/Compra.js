@@ -38,7 +38,7 @@ export default class Compra extends Component {
                             <div className="bodyCompra">  
                                 <div className="compra_info">
                                     <div className="compra_info_precio">
-                                        <span className="precio">{articulo.contexto.precios}/</span>
+                                        <span className="precio">${articulo.contexto.precios}/</span>
                                         <span className="cantidad">kilo</span>
                                     </div>
                                     <div className="compra_info_nombre">
@@ -61,10 +61,10 @@ export default class Compra extends Component {
                                         <img src="/media/Group.svg" alt="Boton más" className="btnMas"/>
                                     </button>
 
-                                    <div className="compra_final"> 
-                                        <button className="btnAddToCart" onClick={()=> compra.metodo([...compra.contexto, articulo.contexto])}>
-                                            Añadir producto
-                                        </button>
+                                    <div className="compra_final">
+                                            <button className="btnAddToCart" onClick={()=> compra.metodo([...compra.contexto, articulo.contexto])}>
+                                                Añadir producto
+                                            </button>
                                     </div> 
                                 </div>
                             </div>  

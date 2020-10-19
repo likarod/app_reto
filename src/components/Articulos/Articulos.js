@@ -21,14 +21,12 @@ export class Articulos extends Component {
     }
 
 
-
-
     render() {
         return (
             <ArticuloConsumer>
             {(articulos)=> (
              <article>
-                {console.log(this.props.datos.id)}
+                {console.log(this.props.datos.nombre)}
                 <div className="body_articulo">
                     <div className="container_art">
                         <div className="nombreProductor">
