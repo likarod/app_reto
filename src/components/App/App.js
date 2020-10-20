@@ -30,7 +30,7 @@ function App() {
   const [compra, setCompra ] = useState([
     {   
       id: "2",
-      productor: 'Rosalinda Echevarria',
+      productor: 'Finca Valparaíso',
       img: "/media/68.jpg",
       nombre: 'Maiz',
       precios: '1.1',

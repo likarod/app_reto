@@ -56,7 +56,7 @@ export default class InfoProductor extends Component {
                     type="text"
                     name="codigo ciiu"
                     placeholder="Introduzca su código CIIU"/>
-                    {/* <Form
+                    <Form
                     claseDiv="cntStock"
                     claseForm="form"
                     divInput="dCantidadInput"
@@ -72,7 +72,7 @@ export default class InfoProductor extends Component {
                     classInput="precioProducto"
                     type="number"
                     name="precioProducto"
-                    placeholder="Introduzca el precio de su producto"/>  */}
+                    placeholder="Introduzca el precio de su producto"/> 
                     
                 </div>
             </article>

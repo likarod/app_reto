@@ -1,6 +1,7 @@
+
 import React, { Component } from 'react'
 import Articulos from '../Articulos/Articulos'
-import Items from '../Productos/Items'
+// import Items from '../Productos/Items'
 
 import './Contenido.css'
 
@@ -15,8 +16,10 @@ export default class Contenido extends Component {
     }
 
     componentDidMount(){
-        fetch('/buscarProductos')
-        this.setState({productos:Items})
+        fetch('http://localhost:5000/buscarProducto')
+        .then(response => response.json())
+        .then(productos=>console.log(productos))
+        // //this.setState({productos})
     }
     
 
