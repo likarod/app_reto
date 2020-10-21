@@ -10,7 +10,7 @@ export default class Contenido extends Component {
         super(props);
          this.state = {
             productos: [],
-            // params: "",
+            // params: this.props.input
         }
         
     }
