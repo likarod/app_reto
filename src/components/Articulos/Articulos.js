@@ -8,11 +8,11 @@ export class Articulos extends Component {
     constructor(props){
         super(props);
         this.state = {
-            id:  this.props.datos.id,
-            nombreComercial: this.props.datos.productor,
-            img: this.props.datos.img,
-            nombre: this.props.datos.nombre,
-            precios: this.props.datos.precios,
+            // id:  this.props.datos.id,
+            // nombreComercial: this.props.datos.productor,
+            // img: this.props.datos.img,
+            nombre: this.props.datos.Producto,
+            precios: this.props.datos.PrecioProducto,
             direccion: this.props.datos.direccion,
             canton: this.props.datos.canton, 
             cantidad: 1,
@@ -25,6 +25,7 @@ export class Articulos extends Component {
             <ArticuloConsumer>
             {(articulos)=> (
              <article>
+                 {console.log(this.state)}
                 <div className="body_articulo">
                     <div className="container_art">
                         <div className="nombreProductor">

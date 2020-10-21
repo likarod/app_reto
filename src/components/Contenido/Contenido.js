@@ -10,16 +10,15 @@ export default class Contenido extends Component {
         super(props);
          this.state = {
             productos: [],
-            // params: this.props.input
+            params: this.props.input
         }
         
     }
 
     componentDidMount(){
-        fetch('http://localhost:5000/buscarProducto')
+        fetch(`http://localhost:5000/buscarProducto/CULTIVO DE ${this.props.match.params.producto}.`)
         .then(response => response.json())
-        .then(productos=>console.log(productos))
-        // //this.setState({productos})
+        .then(products=>this.setState({productos:products}))
     }
     
 

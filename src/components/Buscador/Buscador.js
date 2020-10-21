@@ -18,6 +18,7 @@ class Buscador extends Component {
 
   cambiarEstado = (e) => {
     this.setState({input: e.target.value})
+    console.log(this.state.input)
   }
 
   // componentDidMount(){
