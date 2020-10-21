@@ -8,14 +8,35 @@ export class Articulos extends Component {
     constructor(props){
         super(props);
         this.state = {
-            // id:  this.props.datos.id,
-            // nombreComercial: this.props.datos.productor,
-            // img: this.props.datos.img,
+            nombreComercial: this.props.datos.razonSocial,
             nombre: this.props.datos.Producto,
             precios: this.props.datos.PrecioProducto,
-            direccion: this.props.datos.direccion,
-            canton: this.props.datos.canton, 
+            canton: this.props.datos.DescripcionCanton, 
             cantidad: 1,
+            url: this.props.parametro,
+            img:""
+        }
+    }
+
+    mostrarImagenes = () =>{
+        if(this.state.url === 'CACAO'){
+            if(this.state.img !== '/media/FotoAlimentos/cacao.jpg')
+                this.setState({img:'/media/FotoAlimentos/cacao.jpg'})
+            return  <div className="imagenes">l
+                        <img src='/media/FotoAlimentos/cacao.jpg' className="imgProductos" alt="productos"/>
+                    </div>  
+        } else if(this.state.url === 'NARANJAS'){
+            if(this.state.img !== '/media/FotoAlimentos/Naranjas.jpeg')
+                this.setState({img:'/media/FotoAlimentos/Naranjas.jpeg'})
+            return  <div className="imagenes">
+                        <img src='/media/FotoAlimentos/Naranjas.jpeg' className="imgProductos" alt="productos"/>
+                    </div> 
+        } else if(this.state.url === 'PAPA'){
+            if(this.state.img !== '/media/FotoAlimentos/papas.jpg')
+                this.setState({img:'/media/FotoAlimentos/papas.jpg'})
+            return <div className="imagenes">
+                        <img src='/media/FotoAlimentos/papas.jpg' className="imgProductos" alt="productos"/>
+                    </div> 
         }
     }
 
@@ -25,15 +46,12 @@ export class Articulos extends Component {
             <ArticuloConsumer>
             {(articulos)=> (
              <article>
-                 {console.log(this.state)}
                 <div className="body_articulo">
                     <div className="container_art">
                         <div className="nombreProductor">
                             <p className="productor">{this.state.nombreComercial}</p>
                         </div>
-                        <div className="imagenes">
-                            <img src={this.state.img} className="imgProductos" alt="productos"/>
-                        </div>  
+                        {this.mostrarImagenes()}
                         <hr/>
                         <div className="productos">
                             <h3 className="precios">${this.state.precios}</h3>

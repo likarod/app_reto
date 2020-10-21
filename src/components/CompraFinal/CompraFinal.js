@@ -11,7 +11,6 @@ function CompraFinal () {
         <CompraConsumer>
             {(comprafinal)=> (
                 <div>
-                    {console.log(comprafinal.contexto)}
                     <div className="mensajeCompra">
                             {comprafinal.contexto.map((obj)=>
                                 <div>
@@ -19,17 +18,17 @@ function CompraFinal () {
                                         <div>
                                             <img src={obj.img} alt={obj.img} className="imgCompraFinal"/>
                                         </div>
-                                        <h4 className="tituloCompraFinal">
-                                            {obj.nombre}
-                                        </h4>
+                                        <div className="tituloCompraFinal">
+                                            <h5 className="productoCompraFinal">{obj.nombre}</h5>
+                                        </div>
                                         <div className="dPrecioCompraFinal">
-                                            <h5>PRECIO</h5>
-                                            <p>$ {obj.precios}</p>
+                                            <h5 className="precioCompraFinal">PRECIO</h5>
+                                            <p className="money">$ {obj.precios}</p>
                                         </div>  
                                     </div>
                                     
                                     <div className="subtotalCompraFinal">
-                                        <h3>SUBTOTAL</h3>
+                                        <h3 className="subtotalCompraFinal">SUBTOTAL</h3>
                                         <p>$ {parseInt(obj.cantidad) + parseFloat(obj.precios)}</p>
                                     </div>
                                     <button className="vaciar">
@@ -39,7 +38,7 @@ function CompraFinal () {
                                 </div>
 
                             )}
-                            <button>
+                            <button className="btnInicio">
                                 Ir a inicio
                             </button>
                     </div>

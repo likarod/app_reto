@@ -30,8 +30,7 @@ export default class Compra extends Component {
                                         <img src="/media/love.svg" alt="Me gusta" className="meGusta"/>
                                     </button>
                                 </div>
-                                <div className="carritoImg">
-                                    
+                                <div className="carritoImg">       
                                     <img className="imgProductoCarrito" src={articulo.contexto.img} alt="producto"/>
                                 </div>
                             </div>
