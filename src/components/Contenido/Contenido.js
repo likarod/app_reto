@@ -16,7 +16,7 @@ export default class Contenido extends Component {
     }
 
     componentDidMount(){
-        fetch(`http://localhost:5000/buscarProducto/CULTIVO DE ${this.props.match.params.producto}.`)
+        fetch(`http://localhost:3000/buscarProducto/CULTIVO DE ${this.props.match.params.producto}.`)
         .then(response => response.json())
         .then(products=>this.setState({productos:products}))
     }
